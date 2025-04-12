@@ -953,6 +953,7 @@ UI["69"]["Position"] = UDim2.new(-0, 0, 0, 0)
 UI["6a"] = Instance.new("TextLabel", UI["68"])
 UI["6a"]["TextWrapped"] = true
 UI["6a"]["BorderSizePixel"] = 0
+UI["6a"]["TextXAlignment"] = Enum.TextXAlignment.Left
 UI["6a"]["TextTransparency"] = 0.6
 UI["6a"]["TextScaled"] = true
 UI["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
@@ -960,7 +961,7 @@ UI["6a"]["TextSize"] = 14
 UI["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["6a"]["BackgroundTransparency"] = 1
-UI["6a"]["Size"] = UDim2.new(0.32314, 0, 0.06165, 0)
+UI["6a"]["Size"] = UDim2.new(0.44126, 0, 0.06165, 0)
 UI["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["6a"]["Text"] = [[Starts a New Session, switches Servers.]]
 UI["6a"]["Position"] = UDim2.new(0, 0, 0.05546, 0)
@@ -1061,6 +1062,7 @@ UI["74"]["BackgroundTransparency"] = 0.999
 UI["75"] = Instance.new("TextLabel", UI["74"])
 UI["75"]["TextWrapped"] = true
 UI["75"]["BorderSizePixel"] = 0
+UI["75"]["TextXAlignment"] = Enum.TextXAlignment.Left
 UI["75"]["TextTransparency"] = 0.6
 UI["75"]["TextScaled"] = true
 UI["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
@@ -1068,7 +1070,7 @@ UI["75"]["TextSize"] = 14
 UI["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["75"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["75"]["BackgroundTransparency"] = 1
-UI["75"]["Size"] = UDim2.new(0.3046, 0, 0.06165, 0)
+UI["75"]["Size"] = UDim2.new(0.44126, 0, 0.06165, 0)
 UI["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["75"]["Text"] = [[A tool for debugging you Scripts.]]
 UI["75"]["Position"] = UDim2.new(0, 0, 0.05546, 0)
@@ -1124,7 +1126,7 @@ UI["79"]["BackgroundTransparency"] = 0.999
 UI["79"]["RichText"] = true
 UI["79"]["Size"] = UDim2.new(1, 0, 1, 0)
 UI["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["79"]["Text"] = [[?? <font color="#B62a3d">14:09:20 -- pluh what did you do at line 1389475683774131983686134871</font>]]
+UI["79"]["Text"] = [[🔴 <font color="#B62a3d">14:09:20 -- pluh what did you do at line 1389475683774131983686134871</font>]]
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ConsoleF.ScrollingFrame.TextLabel.LocalScript \\ --
 UI["7a"] = Instance.new("LocalScript", UI["79"])
@@ -1160,6 +1162,7 @@ UI["7c"]["Position"] = UDim2.new(-0, 0, 0, 0)
 UI["7d"] = Instance.new("TextLabel", UI["7b"])
 UI["7d"]["TextWrapped"] = true
 UI["7d"]["BorderSizePixel"] = 0
+UI["7d"]["TextXAlignment"] = Enum.TextXAlignment.Left
 UI["7d"]["TextTransparency"] = 0.6
 UI["7d"]["TextScaled"] = true
 UI["7d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
@@ -1167,7 +1170,7 @@ UI["7d"]["TextSize"] = 14
 UI["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["7d"]["BackgroundTransparency"] = 1
-UI["7d"]["Size"] = UDim2.new(0.32314, 0, 0.06165, 0)
+UI["7d"]["Size"] = UDim2.new(0.44126, 0, 0.06165, 0)
 UI["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["7d"]["Text"] = [[Automatically Executes desired Scripts.]]
 UI["7d"]["Position"] = UDim2.new(0, 0, 0.05546, 0)
@@ -1325,7 +1328,6 @@ UI["91"]["CellPadding"] = UDim2.new(0, 0, 0, 0)
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.SearchBar \\ --
 UI["92"] = Instance.new("TextBox", UI["82"])
-UI["92"]["CursorPosition"] = -1
 UI["92"]["TextColor3"] = Color3.fromRGB(252, 253, 255)
 UI["92"]["PlaceholderColor3"] = Color3.fromRGB(66, 68, 71)
 UI["92"]["BorderSizePixel"] = 0
@@ -1624,7 +1626,6 @@ UI["b6"]["Name"] = [[APIScript]]
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.SearchBar \\ --
 UI["b7"] = Instance.new("TextBox", UI["b2"])
-UI["b7"]["CursorPosition"] = -1
 UI["b7"]["TextColor3"] = Color3.fromRGB(252, 253, 255)
 UI["b7"]["PlaceholderColor3"] = Color3.fromRGB(66, 68, 71)
 UI["b7"]["BorderSizePixel"] = 0
@@ -2316,7 +2317,7 @@ local function SCRIPT_7f()
 	local autoFFrame = gui:WaitForChild("AutoF")
 	local consoleFrame = gui:WaitForChild("ConsoleF")
 	local serverFrame = gui:WaitForChild("ServerF")
-
+	
 	autoFFrame.Visible = false
 	consoleFrame.Visible = false
 	serverFrame.Visible = false
