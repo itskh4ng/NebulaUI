@@ -1,6 +1,6 @@
--- // GUI TO LUA \\ --
+-- // NEBULA UI \\ --
 
--- // INSTANCES: 223 | SCRIPTS: 17 | MODULES: 0 \\ --
+-- // INSTANCES: 262 | SCRIPTS: 21 | MODULES: 0 \\ --
 
 local UI = {}
 
@@ -168,8 +168,10 @@ UI["15"]["Position"] = UDim2.new(0.06848, 0, 0.34208, 0)
 
 -- // StarterGui.NebulaUI.Frame.Frame.SearchButton.TextLabel \\ --
 UI["16"] = Instance.new("TextLabel", UI["12"])
+UI["16"]["TextWrapped"] = true
 UI["16"]["BorderSizePixel"] = 0
 UI["16"]["TextTransparency"] = 0.4
+UI["16"]["TextScaled"] = true
 UI["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["16"]["TextSize"] = 14
 UI["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
@@ -408,8 +410,10 @@ UI["2c"]["Color"] = Color3.fromRGB(57, 72, 99)
 
 -- // StarterGui.NebulaUI.Frame.Frame.ConfigButton.TextLabel \\ --
 UI["2d"] = Instance.new("TextLabel", UI["2a"])
+UI["2d"]["TextWrapped"] = true
 UI["2d"]["BorderSizePixel"] = 0
 UI["2d"]["TextTransparency"] = 0.35
+UI["2d"]["TextScaled"] = true
 UI["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["2d"]["TextSize"] = 14
 UI["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
@@ -570,413 +574,424 @@ UI["3b"] = Instance.new("LocalScript", UI["11"])
 UI["3c"] = Instance.new("UICorner", UI["8"])
 UI["3c"]["CornerRadius"] = UDim.new(0.1, 0)
 
--- // StarterGui.NebulaUI.Frame.UICorner.UIGridLayout \\ --
-UI["3d"] = Instance.new("UIGridLayout", UI["3c"])
-UI["3d"]["CellSize"] = UDim2.new(1.001, 0, 0.122, 0)
-UI["3d"]["SortOrder"] = Enum.SortOrder.LayoutOrder
-UI["3d"]["CellPadding"] = UDim2.new(0, 11, 0, 11)
-
 -- // StarterGui.NebulaUI.EditorFrame \\ --
-UI["3e"] = Instance.new("Frame", UI["1"])
-UI["3e"]["BorderSizePixel"] = 0
-UI["3e"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
-UI["3e"]["Size"] = UDim2.new(0.6356, 0, 0.87686, 0)
-UI["3e"]["Position"] = UDim2.new(0.32851, 0, 0.06149, 0)
-UI["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3e"]["Name"] = [[EditorFrame]]
-UI["3e"]["BackgroundTransparency"] = 0.06
+UI["3d"] = Instance.new("Frame", UI["1"])
+UI["3d"]["BorderSizePixel"] = 0
+UI["3d"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
+UI["3d"]["Size"] = UDim2.new(0.6356, 0, 0.87686, 0)
+UI["3d"]["Position"] = UDim2.new(0.32851, 0, 0.06149, 0)
+UI["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3d"]["Name"] = [[EditorFrame]]
+UI["3d"]["BackgroundTransparency"] = 0.06
 
 -- // StarterGui.NebulaUI.EditorFrame.UICorner \\ --
-UI["3f"] = Instance.new("UICorner", UI["3e"])
-UI["3f"]["CornerRadius"] = UDim.new(0.05, 0)
+UI["3e"] = Instance.new("UICorner", UI["3d"])
+UI["3e"]["CornerRadius"] = UDim.new(0.05, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.EditorFunctions \\ --
-UI["40"] = Instance.new("LocalScript", UI["3e"])
-UI["40"]["Name"] = [[EditorFunctions]]
+UI["3f"] = Instance.new("LocalScript", UI["3d"])
+UI["3f"]["Name"] = [[EditorFunctions]]
 
 -- // StarterGui.NebulaUI.EditorFrame.ExecuteButton \\ --
-UI["41"] = Instance.new("TextButton", UI["3e"])
-UI["41"]["BorderSizePixel"] = 0
-UI["41"]["TextSize"] = 14
-UI["41"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["41"]["Size"] = UDim2.new(0.08241, 0, 0.10498, 0)
-UI["41"]["BackgroundTransparency"] = 1
-UI["41"]["Name"] = [[ExecuteButton]]
-UI["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["41"]["Text"] = [[]]
-UI["41"]["Position"] = UDim2.new(0.89252, 0, 0.86155, 0)
+UI["40"] = Instance.new("TextButton", UI["3d"])
+UI["40"]["BorderSizePixel"] = 0
+UI["40"]["TextSize"] = 14
+UI["40"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["40"]["Size"] = UDim2.new(0.08241, 0, 0.10498, 0)
+UI["40"]["BackgroundTransparency"] = 1
+UI["40"]["Name"] = [[ExecuteButton]]
+UI["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["40"]["Text"] = [[]]
+UI["40"]["Position"] = UDim2.new(0.89252, 0, 0.86155, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.ExecuteButton.UICorner \\ --
-UI["42"] = Instance.new("UICorner", UI["41"])
-UI["42"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["41"] = Instance.new("UICorner", UI["40"])
+UI["41"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.ExecuteButton.ImageLabel \\ --
-UI["43"] = Instance.new("ImageLabel", UI["41"])
-UI["43"]["BorderSizePixel"] = 0
-UI["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["43"]["ScaleType"] = Enum.ScaleType.Fit
-UI["43"]["Image"] = [[rbxassetid://137723469773399]]
-UI["43"]["Size"] = UDim2.new(0.61927, 0, 0.61927, 0)
-UI["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["43"]["BackgroundTransparency"] = 1
-UI["43"]["Position"] = UDim2.new(0.19036, 0, 0.19036, 0)
+UI["42"] = Instance.new("ImageLabel", UI["40"])
+UI["42"]["BorderSizePixel"] = 0
+UI["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["42"]["ScaleType"] = Enum.ScaleType.Fit
+UI["42"]["Image"] = [[rbxassetid://137723469773399]]
+UI["42"]["Size"] = UDim2.new(0.61927, 0, 0.61927, 0)
+UI["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["42"]["BackgroundTransparency"] = 1
+UI["42"]["Position"] = UDim2.new(0.19036, 0, 0.19036, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.ExecuteButton.UIStroke \\ --
-UI["44"] = Instance.new("UIStroke", UI["41"])
-UI["44"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["44"]["Thickness"] = 1.5
-UI["44"]["Color"] = Color3.fromRGB(57, 71, 99)
+UI["43"] = Instance.new("UIStroke", UI["40"])
+UI["43"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["43"]["Thickness"] = 1.5
+UI["43"]["Color"] = Color3.fromRGB(57, 71, 99)
 
 -- // StarterGui.NebulaUI.EditorFrame.PasteButton \\ --
-UI["45"] = Instance.new("TextButton", UI["3e"])
-UI["45"]["BorderSizePixel"] = 0
-UI["45"]["TextSize"] = 14
-UI["45"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["45"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
-UI["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["45"]["Size"] = UDim2.new(0.08241, 0, 0.10498, 0)
-UI["45"]["BackgroundTransparency"] = 1
-UI["45"]["Name"] = [[PasteButton]]
-UI["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["45"]["Text"] = [[]]
-UI["45"]["Position"] = UDim2.new(0.77815, 0, 0.86155, 0)
+UI["44"] = Instance.new("TextButton", UI["3d"])
+UI["44"]["BorderSizePixel"] = 0
+UI["44"]["TextSize"] = 14
+UI["44"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["44"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
+UI["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["44"]["Size"] = UDim2.new(0.08241, 0, 0.10498, 0)
+UI["44"]["BackgroundTransparency"] = 1
+UI["44"]["Name"] = [[PasteButton]]
+UI["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["44"]["Text"] = [[]]
+UI["44"]["Position"] = UDim2.new(0.77815, 0, 0.86155, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.PasteButton.UICorner \\ --
-UI["46"] = Instance.new("UICorner", UI["45"])
-UI["46"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["45"] = Instance.new("UICorner", UI["44"])
+UI["45"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.PasteButton.ImageLabel \\ --
-UI["47"] = Instance.new("ImageLabel", UI["45"])
-UI["47"]["BorderSizePixel"] = 0
-UI["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["47"]["ScaleType"] = Enum.ScaleType.Fit
-UI["47"]["Image"] = [[rbxassetid://131805971277147]]
-UI["47"]["Size"] = UDim2.new(0.61927, 0, 0.61927, 0)
-UI["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["47"]["BackgroundTransparency"] = 1
-UI["47"]["Rotation"] = 45
-UI["47"]["Position"] = UDim2.new(0.19036, 0, 0.19036, 0)
+UI["46"] = Instance.new("ImageLabel", UI["44"])
+UI["46"]["BorderSizePixel"] = 0
+UI["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["46"]["ScaleType"] = Enum.ScaleType.Fit
+UI["46"]["Image"] = [[rbxassetid://131805971277147]]
+UI["46"]["Size"] = UDim2.new(0.61927, 0, 0.61927, 0)
+UI["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["46"]["BackgroundTransparency"] = 1
+UI["46"]["Rotation"] = 45
+UI["46"]["Position"] = UDim2.new(0.19036, 0, 0.19036, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.PasteButton.UIStroke \\ --
-UI["48"] = Instance.new("UIStroke", UI["45"])
-UI["48"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["48"]["Thickness"] = 1.5
-UI["48"]["Color"] = Color3.fromRGB(51, 52, 54)
+UI["47"] = Instance.new("UIStroke", UI["44"])
+UI["47"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["47"]["Thickness"] = 1.5
+UI["47"]["Color"] = Color3.fromRGB(51, 52, 54)
 
 -- // StarterGui.NebulaUI.EditorFrame.ClearButton \\ --
-UI["49"] = Instance.new("TextButton", UI["3e"])
-UI["49"]["BorderSizePixel"] = 0
-UI["49"]["TextSize"] = 14
-UI["49"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["49"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
-UI["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["49"]["Size"] = UDim2.new(0.08241, 0, 0.10498, 0)
-UI["49"]["BackgroundTransparency"] = 1
-UI["49"]["Name"] = [[ClearButton]]
-UI["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["49"]["Text"] = [[]]
-UI["49"]["Position"] = UDim2.new(0.66583, 0, 0.86155, 0)
+UI["48"] = Instance.new("TextButton", UI["3d"])
+UI["48"]["BorderSizePixel"] = 0
+UI["48"]["TextSize"] = 14
+UI["48"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["48"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
+UI["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["48"]["Size"] = UDim2.new(0.08241, 0, 0.10498, 0)
+UI["48"]["BackgroundTransparency"] = 1
+UI["48"]["Name"] = [[ClearButton]]
+UI["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["48"]["Text"] = [[]]
+UI["48"]["Position"] = UDim2.new(0.66583, 0, 0.86155, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.ClearButton.UICorner \\ --
-UI["4a"] = Instance.new("UICorner", UI["49"])
-UI["4a"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["49"] = Instance.new("UICorner", UI["48"])
+UI["49"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.ClearButton.ImageLabel \\ --
-UI["4b"] = Instance.new("ImageLabel", UI["49"])
-UI["4b"]["BorderSizePixel"] = 0
-UI["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["4b"]["ScaleType"] = Enum.ScaleType.Fit
-UI["4b"]["Image"] = [[rbxassetid://91034845663835]]
-UI["4b"]["Size"] = UDim2.new(0.61927, 0, 0.61927, 0)
-UI["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4b"]["BackgroundTransparency"] = 1
-UI["4b"]["Position"] = UDim2.new(0.19036, 0, 0.19036, 0)
+UI["4a"] = Instance.new("ImageLabel", UI["48"])
+UI["4a"]["BorderSizePixel"] = 0
+UI["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4a"]["ScaleType"] = Enum.ScaleType.Fit
+UI["4a"]["Image"] = [[rbxassetid://91034845663835]]
+UI["4a"]["Size"] = UDim2.new(0.61927, 0, 0.61927, 0)
+UI["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4a"]["BackgroundTransparency"] = 1
+UI["4a"]["Position"] = UDim2.new(0.19036, 0, 0.19036, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.ClearButton.UIStroke \\ --
-UI["4c"] = Instance.new("UIStroke", UI["49"])
-UI["4c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["4c"]["Thickness"] = 1.5
-UI["4c"]["Color"] = Color3.fromRGB(51, 52, 54)
+UI["4b"] = Instance.new("UIStroke", UI["48"])
+UI["4b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["4b"]["Thickness"] = 1.5
+UI["4b"]["Color"] = Color3.fromRGB(51, 52, 54)
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame \\ --
-UI["4d"] = Instance.new("Frame", UI["3e"])
-UI["4d"]["BorderSizePixel"] = 0
-UI["4d"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
-UI["4d"]["Size"] = UDim2.new(0.95105, 0, 0.7956, 0)
-UI["4d"]["Position"] = UDim2.new(0.02428, 0, 0.03021, 0)
-UI["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4d"]["BackgroundTransparency"] = 1
+UI["4c"] = Instance.new("Frame", UI["3d"])
+UI["4c"]["BorderSizePixel"] = 0
+UI["4c"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
+UI["4c"]["Size"] = UDim2.new(0.95105, 0, 0.7956, 0)
+UI["4c"]["Position"] = UDim2.new(0.02428, 0, 0.03021, 0)
+UI["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4c"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.UICorner \\ --
-UI["4e"] = Instance.new("UICorner", UI["4d"])
-UI["4e"]["CornerRadius"] = UDim.new(0.04, 0)
+UI["4d"] = Instance.new("UICorner", UI["4c"])
+UI["4d"]["CornerRadius"] = UDim.new(0.04, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame \\ --
-UI["4f"] = Instance.new("ScrollingFrame", UI["4d"])
-UI["4f"]["Active"] = true
-UI["4f"]["ScrollingDirection"] = Enum.ScrollingDirection.Y
-UI["4f"]["BorderSizePixel"] = 0
-UI["4f"]["BackgroundColor3"] = Color3.fromRGB(25, 26, 26)
-UI["4f"]["Size"] = UDim2.new(0.94039, 0, 0.90575, 0)
-UI["4f"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4f"]["Position"] = UDim2.new(0.02961, 0, 0.04335, 0)
-UI["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4f"]["ScrollBarThickness"] = 0
-UI["4f"]["BackgroundTransparency"] = 1
+UI["4e"] = Instance.new("ScrollingFrame", UI["4c"])
+UI["4e"]["Active"] = true
+UI["4e"]["ScrollingDirection"] = Enum.ScrollingDirection.Y
+UI["4e"]["BorderSizePixel"] = 0
+UI["4e"]["BackgroundColor3"] = Color3.fromRGB(25, 26, 26)
+UI["4e"]["Size"] = UDim2.new(0.94039, 0, 0.90575, 0)
+UI["4e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4e"]["Position"] = UDim2.new(0.02961, 0, 0.04335, 0)
+UI["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4e"]["ScrollBarThickness"] = 0
+UI["4e"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame.Line \\ --
-UI["50"] = Instance.new("Frame", UI["4f"])
-UI["50"]["BorderSizePixel"] = 0
-UI["50"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["50"]["Size"] = UDim2.new(0.01764, 0, 0.68182, 0)
-UI["50"]["Position"] = UDim2.new(0, 0, -0, 0)
-UI["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["50"]["Name"] = [[Line]]
-UI["50"]["BackgroundTransparency"] = 1
+UI["4f"] = Instance.new("Frame", UI["4e"])
+UI["4f"]["BorderSizePixel"] = 0
+UI["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4f"]["Size"] = UDim2.new(0.01764, 0, 0.68182, 0)
+UI["4f"]["Position"] = UDim2.new(0, 0, -0, 0)
+UI["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["Name"] = [[Line]]
+UI["4f"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame.Line.Line Number \\ --
-UI["51"] = Instance.new("TextLabel", UI["50"])
-UI["51"]["TextWrapped"] = true
-UI["51"]["BorderSizePixel"] = 0
-UI["51"]["TextTransparency"] = 0.5
-UI["51"]["TextYAlignment"] = Enum.TextYAlignment.Top
-UI["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["51"]["TextSize"] = 14
-UI["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["51"]["BackgroundTransparency"] = 1
-UI["51"]["RichText"] = true
-UI["51"]["Size"] = UDim2.new(1.04496, 0, 0.58454, 0)
-UI["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["51"]["Text"] = [[1]]
-UI["51"]["Name"] = [[Line Number]]
-UI["51"]["Position"] = UDim2.new(-0.04495, 0, 0.0011, 0)
+UI["50"] = Instance.new("TextLabel", UI["4f"])
+UI["50"]["TextWrapped"] = true
+UI["50"]["BorderSizePixel"] = 0
+UI["50"]["TextTransparency"] = 0.5
+UI["50"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["50"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["50"]["TextSize"] = 14
+UI["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["50"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["50"]["BackgroundTransparency"] = 1
+UI["50"]["RichText"] = true
+UI["50"]["Size"] = UDim2.new(1.04496, 0, 0.58454, 0)
+UI["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["50"]["Text"] = [[1]]
+UI["50"]["Name"] = [[Line Number]]
+UI["50"]["Position"] = UDim2.new(-0.04495, 0, 0.0011, 0)
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame.Line.Line Number.LocalScript \\ --
-UI["52"] = Instance.new("LocalScript", UI["51"])
+UI["51"] = Instance.new("LocalScript", UI["50"])
 
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame.SyntaxEditor \\ --
-UI["53"] = Instance.new("TextBox", UI["4f"])
-UI["53"]["CursorPosition"] = -1
-UI["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["53"]["BorderSizePixel"] = 0
-UI["53"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["53"]["TextWrapped"] = true
-UI["53"]["TextSize"] = 14
-UI["53"]["Name"] = [[SyntaxEditor]]
-UI["53"]["TextYAlignment"] = Enum.TextYAlignment.Top
-UI["53"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8)
-UI["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["53"]["RichText"] = true
-UI["53"]["MultiLine"] = true
-UI["53"]["ClearTextOnFocus"] = false
-UI["53"]["Size"] = UDim2.new(0.973, 0, 0.39953, 0)
-UI["53"]["Position"] = UDim2.new(0.02746, 0, 0, 0)
-UI["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["53"]["Text"] = [[print('Hello World')]]
-UI["53"]["BackgroundTransparency"] = 1
+UI["52"] = Instance.new("TextBox", UI["4e"])
+UI["52"]["CursorPosition"] = -1
+UI["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["52"]["BorderSizePixel"] = 0
+UI["52"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["52"]["TextWrapped"] = true
+UI["52"]["TextSize"] = 14
+UI["52"]["Name"] = [[SyntaxEditor]]
+UI["52"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["52"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8)
+UI["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["52"]["RichText"] = true
+UI["52"]["MultiLine"] = true
+UI["52"]["ClearTextOnFocus"] = false
+UI["52"]["Size"] = UDim2.new(0.973, 0, 0.39953, 0)
+UI["52"]["Position"] = UDim2.new(0.02746, 0, 0, 0)
+UI["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["52"]["Text"] = [[print('Hello Nebula')
+-- Join The Community
+-- nebula-executor.xyz]]
+UI["52"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame.SyntaxEditor.SyntaxScript \\ --
-UI["54"] = Instance.new("LocalScript", UI["53"])
-UI["54"]["Name"] = [[SyntaxScript]]
+UI["53"] = Instance.new("LocalScript", UI["52"])
+UI["53"]["Name"] = [[SyntaxScript]]
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame.SyntaxEditor.UICorner \\ --
-UI["55"] = Instance.new("UICorner", UI["53"])
-UI["55"]["CornerRadius"] = UDim.new(0, 24)
+UI["54"] = Instance.new("UICorner", UI["52"])
+UI["54"]["CornerRadius"] = UDim.new(0, 24)
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame.UICorner \\ --
-UI["56"] = Instance.new("UICorner", UI["4f"])
-UI["56"]["CornerRadius"] = UDim.new(0, 15)
+UI["55"] = Instance.new("UICorner", UI["4e"])
+UI["55"]["CornerRadius"] = UDim.new(0, 15)
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.UIStroke \\ --
-UI["57"] = Instance.new("UIStroke", UI["4d"])
-UI["57"]["Color"] = Color3.fromRGB(57, 71, 99)
+UI["56"] = Instance.new("UIStroke", UI["4c"])
+UI["56"]["Color"] = Color3.fromRGB(57, 71, 99)
 
 -- // StarterGui.NebulaUI.EditorFrame.Frame.glow \\ --
-UI["58"] = Instance.new("ImageLabel", UI["4d"])
-UI["58"]["Interactable"] = false
-UI["58"]["BorderSizePixel"] = 0
-UI["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["58"]["ImageTransparency"] = 0.6
-UI["58"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
-UI["58"]["Image"] = [[rbxassetid://106985554407226]]
-UI["58"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["58"]["BackgroundTransparency"] = 1
-UI["58"]["Name"] = [[glow]]
+UI["57"] = Instance.new("ImageLabel", UI["4c"])
+UI["57"]["Interactable"] = false
+UI["57"]["BorderSizePixel"] = 0
+UI["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["57"]["ImageTransparency"] = 0.6
+UI["57"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
+UI["57"]["Image"] = [[rbxassetid://106985554407226]]
+UI["57"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["57"]["BackgroundTransparency"] = 1
+UI["57"]["Name"] = [[glow]]
+UI["57"]["Position"] = UDim2.new(0, 0, -0.00177, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame \\ --
-UI["59"] = Instance.new("Frame", UI["1"])
-UI["59"]["BorderSizePixel"] = 0
-UI["59"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
-UI["59"]["Size"] = UDim2.new(0.636, 0, 0.877, 0)
-UI["59"]["Position"] = UDim2.new(1, 0, 0.059, 0)
-UI["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["59"]["Name"] = [[ConfigFrame]]
-UI["59"]["BackgroundTransparency"] = 0.06
+UI["58"] = Instance.new("Frame", UI["1"])
+UI["58"]["BorderSizePixel"] = 0
+UI["58"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
+UI["58"]["Size"] = UDim2.new(0.636, 0, 0.877, 0)
+UI["58"]["Position"] = UDim2.new(1, 0, 0.059, 0)
+UI["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["58"]["Name"] = [[ConfigFrame]]
+UI["58"]["BackgroundTransparency"] = 0.06
 
 -- // StarterGui.NebulaUI.ConfigFrame.UICorner \\ --
-UI["5a"] = Instance.new("UICorner", UI["59"])
-UI["5a"]["CornerRadius"] = UDim.new(0.05, 0)
+UI["59"] = Instance.new("UICorner", UI["58"])
+UI["59"]["CornerRadius"] = UDim.new(0.05, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame \\ --
-UI["5b"] = Instance.new("Frame", UI["59"])
-UI["5b"]["BorderSizePixel"] = 0
-UI["5b"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
-UI["5b"]["Size"] = UDim2.new(0.95105, 0, 0.93471, 0)
-UI["5b"]["Position"] = UDim2.new(0.02428, 0, 0.03021, 0)
-UI["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5b"]["BackgroundTransparency"] = 1
+UI["5a"] = Instance.new("Frame", UI["58"])
+UI["5a"]["BorderSizePixel"] = 0
+UI["5a"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
+UI["5a"]["Size"] = UDim2.new(0.95105, 0, 0.93471, 0)
+UI["5a"]["Position"] = UDim2.new(0.02428, 0, 0.03021, 0)
+UI["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5a"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.UICorner \\ --
-UI["5c"] = Instance.new("UICorner", UI["5b"])
-UI["5c"]["CornerRadius"] = UDim.new(0.03, 0)
+UI["5b"] = Instance.new("UICorner", UI["5a"])
+UI["5b"]["CornerRadius"] = UDim.new(0.03, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.UIStroke \\ --
-UI["5d"] = Instance.new("UIStroke", UI["5b"])
-UI["5d"]["Color"] = Color3.fromRGB(57, 71, 99)
+UI["5c"] = Instance.new("UIStroke", UI["5a"])
+UI["5c"]["Color"] = Color3.fromRGB(57, 71, 99)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.glow \\ --
-UI["5e"] = Instance.new("ImageLabel", UI["5b"])
-UI["5e"]["Interactable"] = false
-UI["5e"]["BorderSizePixel"] = 0
-UI["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["5e"]["ImageTransparency"] = 0.6
-UI["5e"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
-UI["5e"]["Image"] = [[rbxassetid://106985554407226]]
-UI["5e"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5e"]["BackgroundTransparency"] = 1
-UI["5e"]["Name"] = [[glow]]
-UI["5e"]["Position"] = UDim2.new(0.98751, 0, 0.94939, 0)
+UI["5d"] = Instance.new("ImageLabel", UI["5a"])
+UI["5d"]["Interactable"] = false
+UI["5d"]["BorderSizePixel"] = 0
+UI["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5d"]["ImageTransparency"] = 0.6
+UI["5d"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
+UI["5d"]["Image"] = [[rbxassetid://106985554407226]]
+UI["5d"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5d"]["BackgroundTransparency"] = 1
+UI["5d"]["Name"] = [[glow]]
+UI["5d"]["Position"] = UDim2.new(0.98751, 0, 0.94939, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.Console \\ --
-UI["5f"] = Instance.new("TextButton", UI["5b"])
-UI["5f"]["TextWrapped"] = true
-UI["5f"]["BorderSizePixel"] = 0
-UI["5f"]["TextSize"] = 14
-UI["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["5f"]["TextScaled"] = true
-UI["5f"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
-UI["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["5f"]["Size"] = UDim2.new(0.12944, 0, 0.07316, 0)
-UI["5f"]["Name"] = [[Console]]
-UI["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5f"]["Text"] = [[Console]]
-UI["5f"]["Position"] = UDim2.new(0.31424, 0, 0.03437, 0)
+UI["5e"] = Instance.new("TextButton", UI["5a"])
+UI["5e"]["TextWrapped"] = true
+UI["5e"]["BorderSizePixel"] = 0
+UI["5e"]["TextSize"] = 14
+UI["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5e"]["TextScaled"] = true
+UI["5e"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
+UI["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5e"]["Size"] = UDim2.new(0.12944, 0, 0.07316, 0)
+UI["5e"]["Name"] = [[Console]]
+UI["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5e"]["Text"] = [[Console]]
+UI["5e"]["Position"] = UDim2.new(0.31424, 0, 0.03437, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.Console.UICorner \\ --
-UI["60"] = Instance.new("UICorner", UI["5f"])
-UI["60"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["5f"] = Instance.new("UICorner", UI["5e"])
+UI["5f"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.Console.UITextSizeConstraint \\ --
-UI["61"] = Instance.new("UITextSizeConstraint", UI["5f"])
-UI["61"]["MaxTextSize"] = 14
+UI["60"] = Instance.new("UITextSizeConstraint", UI["5e"])
+UI["60"]["MaxTextSize"] = 14
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.Server \\ --
-UI["62"] = Instance.new("TextButton", UI["5b"])
-UI["62"]["TextWrapped"] = true
-UI["62"]["BorderSizePixel"] = 0
-UI["62"]["TextSize"] = 14
-UI["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["62"]["TextScaled"] = true
-UI["62"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
-UI["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["62"]["Size"] = UDim2.new(0.12944, 0, 0.073, 0)
-UI["62"]["Name"] = [[Server]]
-UI["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["62"]["Text"] = [[Server]]
-UI["62"]["Position"] = UDim2.new(0.02596, 0, 0.03453, 0)
+UI["61"] = Instance.new("TextButton", UI["5a"])
+UI["61"]["TextWrapped"] = true
+UI["61"]["BorderSizePixel"] = 0
+UI["61"]["TextSize"] = 14
+UI["61"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["61"]["TextScaled"] = true
+UI["61"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
+UI["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["61"]["Size"] = UDim2.new(0.12944, 0, 0.073, 0)
+UI["61"]["Name"] = [[Server]]
+UI["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["61"]["Text"] = [[Server]]
+UI["61"]["Position"] = UDim2.new(0.02596, 0, 0.03453, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.Server.UICorner \\ --
-UI["63"] = Instance.new("UICorner", UI["62"])
-UI["63"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["62"] = Instance.new("UICorner", UI["61"])
+UI["62"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.Server.UITextSizeConstraint \\ --
-UI["64"] = Instance.new("UITextSizeConstraint", UI["62"])
-UI["64"]["MaxTextSize"] = 14
+UI["63"] = Instance.new("UITextSizeConstraint", UI["61"])
+UI["63"]["MaxTextSize"] = 14
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoExe \\ --
-UI["65"] = Instance.new("TextButton", UI["5b"])
-UI["65"]["TextWrapped"] = true
-UI["65"]["BorderSizePixel"] = 0
-UI["65"]["TextSize"] = 14
-UI["65"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["65"]["TextScaled"] = true
-UI["65"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
-UI["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["65"]["Size"] = UDim2.new(0.1292, 0, 0.073, 0)
-UI["65"]["Name"] = [[AutoExe]]
-UI["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["65"]["Text"] = [[Auto Execute]]
-UI["65"]["Position"] = UDim2.new(0.16954, 0, 0.03453, 0)
+UI["64"] = Instance.new("TextButton", UI["5a"])
+UI["64"]["TextWrapped"] = true
+UI["64"]["BorderSizePixel"] = 0
+UI["64"]["TextSize"] = 14
+UI["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["64"]["TextScaled"] = true
+UI["64"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
+UI["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["64"]["Size"] = UDim2.new(0.1292, 0, 0.073, 0)
+UI["64"]["Name"] = [[AutoExe]]
+UI["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["64"]["Text"] = [[Auto Execute]]
+UI["64"]["Position"] = UDim2.new(0.16954, 0, 0.03453, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoExe.UICorner \\ --
-UI["66"] = Instance.new("UICorner", UI["65"])
-UI["66"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["65"] = Instance.new("UICorner", UI["64"])
+UI["65"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoExe.UITextSizeConstraint \\ --
-UI["67"] = Instance.new("UITextSizeConstraint", UI["65"])
-UI["67"]["MaxTextSize"] = 14
+UI["66"] = Instance.new("UITextSizeConstraint", UI["64"])
+UI["66"]["MaxTextSize"] = 14
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF \\ --
-UI["68"] = Instance.new("Frame", UI["5b"])
-UI["68"]["Visible"] = false
-UI["68"]["BorderSizePixel"] = 0
-UI["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["68"]["Size"] = UDim2.new(0.94713, 0, 0.8408, 0)
-UI["68"]["Position"] = UDim2.new(0.02574, 0, 0.12485, 0)
-UI["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["68"]["Name"] = [[ServerF]]
-UI["68"]["BackgroundTransparency"] = 0.999
+UI["67"] = Instance.new("Frame", UI["5a"])
+UI["67"]["BorderSizePixel"] = 0
+UI["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["67"]["Size"] = UDim2.new(0.94713, 0, 0.8408, 0)
+UI["67"]["Position"] = UDim2.new(0.02574, 0, 0.12485, 0)
+UI["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["67"]["Name"] = [[ServerF]]
+UI["67"]["BackgroundTransparency"] = 0.999
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.TextLabel \\ --
-UI["69"] = Instance.new("TextLabel", UI["68"])
+UI["68"] = Instance.new("TextLabel", UI["67"])
+UI["68"]["TextWrapped"] = true
+UI["68"]["BorderSizePixel"] = 0
+UI["68"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["68"]["TextScaled"] = true
+UI["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["68"]["TextSize"] = 14
+UI["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+UI["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["68"]["BackgroundTransparency"] = 1
+UI["68"]["Size"] = UDim2.new(0.251, 0, 0.056, 0)
+UI["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["68"]["Text"] = [[Server Hop]]
+UI["68"]["Position"] = UDim2.new(-0, 0, 0, 0)
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.TextLabel \\ --
+UI["69"] = Instance.new("TextLabel", UI["67"])
 UI["69"]["TextWrapped"] = true
 UI["69"]["BorderSizePixel"] = 0
 UI["69"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["69"]["TextTransparency"] = 0.6
 UI["69"]["TextScaled"] = true
 UI["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["69"]["TextSize"] = 14
-UI["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+UI["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["69"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["69"]["BackgroundTransparency"] = 1
-UI["69"]["Size"] = UDim2.new(0.13633, 0, 0.05615, 0)
+UI["69"]["Size"] = UDim2.new(0.44126, 0, 0.06165, 0)
 UI["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["69"]["Text"] = [[Server Hop]]
-UI["69"]["Position"] = UDim2.new(-0, 0, 0, 0)
-
--- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.TextLabel \\ --
-UI["6a"] = Instance.new("TextLabel", UI["68"])
-UI["6a"]["TextWrapped"] = true
-UI["6a"]["BorderSizePixel"] = 0
-UI["6a"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["6a"]["TextTransparency"] = 0.6
-UI["6a"]["TextScaled"] = true
-UI["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["6a"]["TextSize"] = 14
-UI["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["6a"]["BackgroundTransparency"] = 1
-UI["6a"]["Size"] = UDim2.new(0.44126, 0, 0.06165, 0)
-UI["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6a"]["Text"] = [[Starts a New Session, switches Servers.]]
-UI["6a"]["Position"] = UDim2.new(0, 0, 0.05546, 0)
+UI["69"]["Text"] = [[Starts a New Session, switches Servers.]]
+UI["69"]["Position"] = UDim2.new(0, 0, 0.05546, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.line \\ --
-UI["6b"] = Instance.new("Frame", UI["68"])
-UI["6b"]["BorderSizePixel"] = 0
-UI["6b"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
-UI["6b"]["Size"] = UDim2.new(0.99977, 0, 0.00344, 0)
-UI["6b"]["Position"] = UDim2.new(0.00023, 0, 0.13954, 0)
-UI["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6b"]["Name"] = [[line]]
+UI["6a"] = Instance.new("Frame", UI["67"])
+UI["6a"]["BorderSizePixel"] = 0
+UI["6a"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
+UI["6a"]["Size"] = UDim2.new(0.99977, 0, 0.00344, 0)
+UI["6a"]["Position"] = UDim2.new(0.00023, 0, 0.13954, 0)
+UI["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6a"]["Name"] = [[line]]
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.TextLabel \\ --
-UI["6c"] = Instance.new("TextLabel", UI["68"])
+UI["6b"] = Instance.new("TextLabel", UI["67"])
+UI["6b"]["TextWrapped"] = true
+UI["6b"]["BorderSizePixel"] = 0
+UI["6b"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6b"]["TextSize"] = 14
+UI["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+UI["6b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6b"]["BackgroundTransparency"] = 1
+UI["6b"]["Size"] = UDim2.new(0.12892, 0, 0.05615, 0)
+UI["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6b"]["Text"] = [[Server Hop]]
+UI["6b"]["Position"] = UDim2.new(-0, 0, 0.16817, 0)
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.TextLabel \\ --
+UI["6c"] = Instance.new("TextLabel", UI["67"])
 UI["6c"]["TextWrapped"] = true
 UI["6c"]["BorderSizePixel"] = 0
 UI["6c"]["TextXAlignment"] = Enum.TextXAlignment.Left
@@ -987,1044 +1002,1369 @@ UI["6c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["6c"]["BackgroundTransparency"] = 1
 UI["6c"]["Size"] = UDim2.new(0.12892, 0, 0.05615, 0)
 UI["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6c"]["Text"] = [[Server Hop]]
-UI["6c"]["Position"] = UDim2.new(0.00741, 0, 0.16638, 0)
-
--- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.TextLabel \\ --
-UI["6d"] = Instance.new("TextLabel", UI["68"])
-UI["6d"]["TextWrapped"] = true
-UI["6d"]["BorderSizePixel"] = 0
-UI["6d"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["6d"]["TextSize"] = 14
-UI["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-UI["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["6d"]["BackgroundTransparency"] = 1
-UI["6d"]["Size"] = UDim2.new(0.12892, 0, 0.05615, 0)
-UI["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6d"]["Text"] = [[Rejoin Server]]
-UI["6d"]["Position"] = UDim2.new(0.00741, 0, 0.26298, 0)
+UI["6c"]["Text"] = [[Rejoin Server]]
+UI["6c"]["Position"] = UDim2.new(-0, 0, 0.26298, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.HopButton \\ --
-UI["6e"] = Instance.new("TextButton", UI["68"])
-UI["6e"]["BorderSizePixel"] = 0
-UI["6e"]["TextSize"] = 14
-UI["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["6e"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
-UI["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["6e"]["Size"] = UDim2.new(0.1156, 0, 0.05615, 0)
-UI["6e"]["Name"] = [[HopButton]]
-UI["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6e"]["Text"] = [[Okay]]
-UI["6e"]["Position"] = UDim2.new(0.88328, 0, 0.16638, 0)
+UI["6d"] = Instance.new("TextButton", UI["67"])
+UI["6d"]["BorderSizePixel"] = 0
+UI["6d"]["TextSize"] = 14
+UI["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6d"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
+UI["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6d"]["Size"] = UDim2.new(0.1156, 0, 0.05615, 0)
+UI["6d"]["Name"] = [[HopButton]]
+UI["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6d"]["Text"] = [[Okay]]
+UI["6d"]["Position"] = UDim2.new(0.88328, 0, 0.16638, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.HopButton.UICorner \\ --
-UI["6f"] = Instance.new("UICorner", UI["6e"])
-UI["6f"]["CornerRadius"] = UDim.new(0.333, 0)
+UI["6e"] = Instance.new("UICorner", UI["6d"])
+UI["6e"]["CornerRadius"] = UDim.new(0.333, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.HopButton.LocalScript \\ --
-UI["70"] = Instance.new("LocalScript", UI["6e"])
+UI["6f"] = Instance.new("LocalScript", UI["6d"])
 
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.RejoinButton \\ --
-UI["71"] = Instance.new("TextButton", UI["68"])
-UI["71"]["BorderSizePixel"] = 0
-UI["71"]["TextSize"] = 14
-UI["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["71"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
-UI["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["71"]["Size"] = UDim2.new(0.1156, 0, 0.05615, 0)
-UI["71"]["Name"] = [[RejoinButton]]
-UI["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["71"]["Text"] = [[Okay]]
-UI["71"]["Position"] = UDim2.new(0.88328, 0, 0.26298, 0)
+UI["70"] = Instance.new("TextButton", UI["67"])
+UI["70"]["BorderSizePixel"] = 0
+UI["70"]["TextSize"] = 14
+UI["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["70"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
+UI["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["70"]["Size"] = UDim2.new(0.1156, 0, 0.05615, 0)
+UI["70"]["Name"] = [[RejoinButton]]
+UI["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["70"]["Text"] = [[Okay]]
+UI["70"]["Position"] = UDim2.new(0.88328, 0, 0.26298, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.RejoinButton.UICorner \\ --
-UI["72"] = Instance.new("UICorner", UI["71"])
-UI["72"]["CornerRadius"] = UDim.new(0.333, 0)
+UI["71"] = Instance.new("UICorner", UI["70"])
+UI["71"]["CornerRadius"] = UDim.new(0.333, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.RejoinButton.LocalScript \\ --
-UI["73"] = Instance.new("LocalScript", UI["71"])
+UI["72"] = Instance.new("LocalScript", UI["70"])
 
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ConsoleF \\ --
-UI["74"] = Instance.new("Frame", UI["5b"])
-UI["74"]["Visible"] = false
-UI["74"]["BorderSizePixel"] = 0
-UI["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["74"]["Size"] = UDim2.new(0.94713, 0, 0.8408, 0)
-UI["74"]["Position"] = UDim2.new(0.02574, 0, 0.12485, 0)
-UI["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["74"]["Name"] = [[ConsoleF]]
-UI["74"]["BackgroundTransparency"] = 0.999
+UI["73"] = Instance.new("Frame", UI["5a"])
+UI["73"]["Visible"] = false
+UI["73"]["BorderSizePixel"] = 0
+UI["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["73"]["Size"] = UDim2.new(0.94713, 0, 0.8408, 0)
+UI["73"]["Position"] = UDim2.new(0.02574, 0, 0.12485, 0)
+UI["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["73"]["Name"] = [[ConsoleF]]
+UI["73"]["BackgroundTransparency"] = 0.999
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ConsoleF.TextLabel \\ --
-UI["75"] = Instance.new("TextLabel", UI["74"])
-UI["75"]["TextWrapped"] = true
-UI["75"]["BorderSizePixel"] = 0
-UI["75"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["75"]["TextTransparency"] = 0.6
-UI["75"]["TextScaled"] = true
-UI["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["75"]["TextSize"] = 14
-UI["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["75"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["75"]["BackgroundTransparency"] = 1
-UI["75"]["Size"] = UDim2.new(0.44126, 0, 0.06165, 0)
-UI["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["75"]["Text"] = [[A tool for debugging you Scripts.]]
-UI["75"]["Position"] = UDim2.new(0, 0, 0.05546, 0)
+UI["74"] = Instance.new("TextLabel", UI["73"])
+UI["74"]["TextWrapped"] = true
+UI["74"]["BorderSizePixel"] = 0
+UI["74"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["74"]["TextTransparency"] = 0.6
+UI["74"]["TextScaled"] = true
+UI["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["74"]["TextSize"] = 14
+UI["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["74"]["BackgroundTransparency"] = 1
+UI["74"]["Size"] = UDim2.new(0.44126, 0, 0.06165, 0)
+UI["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["74"]["Text"] = [[A tool for debugging you Scripts.]]
+UI["74"]["Position"] = UDim2.new(0, 0, 0.05546, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ConsoleF.line \\ --
-UI["76"] = Instance.new("Frame", UI["74"])
-UI["76"]["BorderSizePixel"] = 0
-UI["76"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
-UI["76"]["Size"] = UDim2.new(0.99977, 0, 0.00344, 0)
-UI["76"]["Position"] = UDim2.new(0.00023, 0, 0.13954, 0)
-UI["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["76"]["Name"] = [[line]]
+UI["75"] = Instance.new("Frame", UI["73"])
+UI["75"]["BorderSizePixel"] = 0
+UI["75"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
+UI["75"]["Size"] = UDim2.new(0.99977, 0, 0.00344, 0)
+UI["75"]["Position"] = UDim2.new(0.00023, 0, 0.13954, 0)
+UI["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["75"]["Name"] = [[line]]
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ConsoleF.TextLabel \\ --
-UI["77"] = Instance.new("TextLabel", UI["74"])
-UI["77"]["TextWrapped"] = true
-UI["77"]["BorderSizePixel"] = 0
-UI["77"]["TextScaled"] = true
-UI["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["77"]["TextSize"] = 14
-UI["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-UI["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["77"]["BackgroundTransparency"] = 1
-UI["77"]["Size"] = UDim2.new(0.10792, 0, 0.05615, 0)
-UI["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["77"]["Text"] = [[Console]]
-UI["77"]["Position"] = UDim2.new(-0, 0, 0, 0)
+UI["76"] = Instance.new("TextLabel", UI["73"])
+UI["76"]["TextWrapped"] = true
+UI["76"]["BorderSizePixel"] = 0
+UI["76"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["76"]["TextScaled"] = true
+UI["76"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["76"]["TextSize"] = 14
+UI["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+UI["76"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["76"]["BackgroundTransparency"] = 1
+UI["76"]["Size"] = UDim2.new(0.25122, 0, 0.05615, 0)
+UI["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["76"]["Text"] = [[Console]]
+UI["76"]["Position"] = UDim2.new(-0, 0, 0, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ConsoleF.ScrollingFrame \\ --
-UI["78"] = Instance.new("ScrollingFrame", UI["74"])
-UI["78"]["Active"] = true
-UI["78"]["BorderSizePixel"] = 0
-UI["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["78"]["ScrollBarImageTransparency"] = 1
-UI["78"]["Size"] = UDim2.new(1, 0, 0.80525, 0)
-UI["78"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
-UI["78"]["Position"] = UDim2.new(-0, 0, 0.19475, 0)
-UI["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["78"]["BackgroundTransparency"] = 1
+UI["77"] = Instance.new("ScrollingFrame", UI["73"])
+UI["77"]["Active"] = true
+UI["77"]["BorderSizePixel"] = 0
+UI["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["77"]["ScrollBarImageTransparency"] = 1
+UI["77"]["Size"] = UDim2.new(1, 0, 0.80525, 0)
+UI["77"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["77"]["Position"] = UDim2.new(-0, 0, 0.19475, 0)
+UI["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["77"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ConsoleF.ScrollingFrame.TextLabel \\ --
-UI["79"] = Instance.new("TextLabel", UI["78"])
-UI["79"]["TextWrapped"] = true
-UI["79"]["BorderSizePixel"] = 0
-UI["79"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["79"]["TextTransparency"] = 0.2
-UI["79"]["TextYAlignment"] = Enum.TextYAlignment.Top
-UI["79"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["79"]["TextSize"] = 14
-UI["79"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["79"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["79"]["BackgroundTransparency"] = 0.999
-UI["79"]["RichText"] = true
-UI["79"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["79"]["Text"] = [[🔴 <font color="#B62a3d">14:09:20 -- pluh what did you do at line 1389475683774131983686134871</font>]]
+UI["78"] = Instance.new("TextLabel", UI["77"])
+UI["78"]["TextWrapped"] = true
+UI["78"]["Active"] = true
+UI["78"]["BorderSizePixel"] = 0
+UI["78"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["78"]["TextTransparency"] = 0.2
+UI["78"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["78"]["TextSize"] = 18
+UI["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["78"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["78"]["BackgroundTransparency"] = 0.999
+UI["78"]["RichText"] = true
+UI["78"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["78"]["Text"] = [[🔴 <font color="#B62a3d">14:09:20 -- sorry pluh, this is coming soon :( </font>]]
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ConsoleF.ScrollingFrame.TextLabel.LocalScript \\ --
-UI["7a"] = Instance.new("LocalScript", UI["79"])
+UI["79"] = Instance.new("LocalScript", UI["78"])
 
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF \\ --
-UI["7b"] = Instance.new("Frame", UI["5b"])
-UI["7b"]["Visible"] = false
-UI["7b"]["BorderSizePixel"] = 0
-UI["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["7b"]["Size"] = UDim2.new(0.94713, 0, 0.8408, 0)
-UI["7b"]["Position"] = UDim2.new(0.02574, 0, 0.12485, 0)
-UI["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["7b"]["Name"] = [[AutoF]]
-UI["7b"]["BackgroundTransparency"] = 0.999
+UI["7a"] = Instance.new("Frame", UI["5a"])
+UI["7a"]["Visible"] = false
+UI["7a"]["BorderSizePixel"] = 0
+UI["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7a"]["Size"] = UDim2.new(0.94713, 0, 0.8408, 0)
+UI["7a"]["Position"] = UDim2.new(0.02574, 0, 0.12485, 0)
+UI["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7a"]["Name"] = [[AutoF]]
+UI["7a"]["BackgroundTransparency"] = 0.999
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.TextLabel \\ --
-UI["7c"] = Instance.new("TextLabel", UI["7b"])
+UI["7b"] = Instance.new("TextLabel", UI["7a"])
+UI["7b"]["TextWrapped"] = true
+UI["7b"]["BorderSizePixel"] = 0
+UI["7b"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["7b"]["TextScaled"] = true
+UI["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7b"]["TextSize"] = 14
+UI["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+UI["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7b"]["BackgroundTransparency"] = 1
+UI["7b"]["Size"] = UDim2.new(0.251, 0, 0.056, 0)
+UI["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7b"]["Text"] = [[Auto Execute]]
+UI["7b"]["Position"] = UDim2.new(-0, 0, 0, 0)
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.TextLabel \\ --
+UI["7c"] = Instance.new("TextLabel", UI["7a"])
 UI["7c"]["TextWrapped"] = true
 UI["7c"]["BorderSizePixel"] = 0
+UI["7c"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["7c"]["TextTransparency"] = 0.6
 UI["7c"]["TextScaled"] = true
 UI["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["7c"]["TextSize"] = 14
-UI["7c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+UI["7c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["7c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["7c"]["BackgroundTransparency"] = 1
-UI["7c"]["Size"] = UDim2.new(0.13633, 0, 0.05615, 0)
+UI["7c"]["Size"] = UDim2.new(0.44126, 0, 0.06165, 0)
 UI["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["7c"]["Text"] = [[Auto Execute]]
-UI["7c"]["Position"] = UDim2.new(-0, 0, 0, 0)
-
--- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.TextLabel \\ --
-UI["7d"] = Instance.new("TextLabel", UI["7b"])
-UI["7d"]["TextWrapped"] = true
-UI["7d"]["BorderSizePixel"] = 0
-UI["7d"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["7d"]["TextTransparency"] = 0.6
-UI["7d"]["TextScaled"] = true
-UI["7d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["7d"]["TextSize"] = 14
-UI["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["7d"]["BackgroundTransparency"] = 1
-UI["7d"]["Size"] = UDim2.new(0.44126, 0, 0.06165, 0)
-UI["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["7d"]["Text"] = [[Automatically Executes desired Scripts.]]
-UI["7d"]["Position"] = UDim2.new(0, 0, 0.05546, 0)
+UI["7c"]["Text"] = [[Automatically Executes desired Scripts.]]
+UI["7c"]["Position"] = UDim2.new(0, 0, 0.05546, 0)
 
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.line \\ --
-UI["7e"] = Instance.new("Frame", UI["7b"])
-UI["7e"]["BorderSizePixel"] = 0
-UI["7e"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
-UI["7e"]["Size"] = UDim2.new(0.99977, 0, 0.00344, 0)
-UI["7e"]["Position"] = UDim2.new(0.00023, 0, 0.13954, 0)
-UI["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["7e"]["Name"] = [[line]]
+UI["7d"] = Instance.new("Frame", UI["7a"])
+UI["7d"]["BorderSizePixel"] = 0
+UI["7d"]["BackgroundColor3"] = Color3.fromRGB(35, 64, 90)
+UI["7d"]["Size"] = UDim2.new(0.99977, 0, 0.00344, 0)
+UI["7d"]["Position"] = UDim2.new(0.00023, 0, 0.13954, 0)
+UI["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7d"]["Name"] = [[line]]
 
--- // StarterGui.NebulaUI.ConfigFrame.Frame.LocalScript \\ --
-UI["7f"] = Instance.new("LocalScript", UI["5b"])
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.SaveScript \\ --
+UI["7e"] = Instance.new("LocalScript", UI["7a"])
+UI["7e"]["Name"] = [[SaveScript]]
 
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame \\ --
+UI["7f"] = Instance.new("ScrollingFrame", UI["7a"])
+UI["7f"]["Active"] = true
+UI["7f"]["BorderSizePixel"] = 0
+UI["7f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7f"]["ScrollBarImageTransparency"] = 0.8
+UI["7f"]["Size"] = UDim2.new(1.0593, 0, 0.74352, 0)
+UI["7f"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7f"]["Position"] = UDim2.new(-0.02718, 0, 0.29735, 0)
+UI["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7f"]["BackgroundTransparency"] = 1
 
--- // StarterGui.NebulaUI.FolderFrame \\ --
-UI["80"] = Instance.new("Frame", UI["1"])
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.ScriptFrame \\ --
+UI["80"] = Instance.new("Frame", UI["7f"])
+UI["80"]["Visible"] = false
 UI["80"]["BorderSizePixel"] = 0
-UI["80"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
-UI["80"]["Size"] = UDim2.new(0.636, 0, 0.877, 0)
-UI["80"]["Position"] = UDim2.new(1, 0, 0.059, 0)
+UI["80"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["80"]["Size"] = UDim2.new(0.333, 0, 0.182, 0)
 UI["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["80"]["Name"] = [[FolderFrame]]
-UI["80"]["BackgroundTransparency"] = 0.06
+UI["80"]["Name"] = [[ScriptFrame]]
+UI["80"]["BackgroundTransparency"] = 1
 
--- // StarterGui.NebulaUI.FolderFrame.UICorner \\ --
-UI["81"] = Instance.new("UICorner", UI["80"])
-UI["81"]["CornerRadius"] = UDim.new(0.05, 0)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.ScriptFrame.ImageButton \\ --
+UI["81"] = Instance.new("ImageButton", UI["80"])
+UI["81"]["BorderSizePixel"] = 0
+UI["81"]["ScaleType"] = Enum.ScaleType.Crop
+UI["81"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["81"]["Image"] = [[rbxassetid://77930078757247]]
+UI["81"]["Size"] = UDim2.new(0.88934, 0, 0.86062, 0)
+UI["81"]["BackgroundTransparency"] = 1
+UI["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["81"]["Position"] = UDim2.new(0.05177, 0, 0.06733, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame \\ --
-UI["82"] = Instance.new("Frame", UI["80"])
-UI["82"]["BorderSizePixel"] = 0
-UI["82"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
-UI["82"]["Size"] = UDim2.new(0.95105, 0, 0.93471, 0)
-UI["82"]["Position"] = UDim2.new(0.02428, 0, 0.03021, 0)
-UI["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["82"]["BackgroundTransparency"] = 1
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.ScriptFrame.ImageButton.UICorner \\ --
+UI["82"] = Instance.new("UICorner", UI["81"])
+UI["82"]["CornerRadius"] = UDim.new(0.16, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.UICorner \\ --
-UI["83"] = Instance.new("UICorner", UI["82"])
-UI["83"]["CornerRadius"] = UDim.new(0.03, 0)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.ScriptFrame.ImageButton.NameLabel \\ --
+UI["83"] = Instance.new("TextLabel", UI["81"])
+UI["83"]["TextWrapped"] = true
+UI["83"]["BorderSizePixel"] = 0
+UI["83"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["83"]["TextTransparency"] = 0.6
+UI["83"]["TextScaled"] = true
+UI["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["83"]["TextSize"] = 14
+UI["83"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["83"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["83"]["BackgroundTransparency"] = 1
+UI["83"]["Size"] = UDim2.new(0.26651, 0, 0.17809, 0)
+UI["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["83"]["Name"] = [[NameLabel]]
+UI["83"]["Position"] = UDim2.new(0.06484, 0, 0.08081, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.UIStroke \\ --
-UI["84"] = Instance.new("UIStroke", UI["82"])
-UI["84"]["Color"] = Color3.fromRGB(57, 71, 99)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.ScriptFrame.ImageButton.NameLabel.UIAspectRatioConstraint \\ --
+UI["84"] = Instance.new("UIAspectRatioConstraint", UI["83"])
+UI["84"]["AspectRatio"] = 1.99558
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.glow \\ --
-UI["85"] = Instance.new("ImageLabel", UI["82"])
-UI["85"]["Interactable"] = false
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.ScriptFrame.ImageButton.Delete \\ --
+UI["85"] = Instance.new("ImageButton", UI["81"])
 UI["85"]["BorderSizePixel"] = 0
-UI["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["85"]["ScaleType"] = Enum.ScaleType.Fit
 UI["85"]["ImageTransparency"] = 0.6
-UI["85"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
-UI["85"]["Image"] = [[rbxassetid://106985554407226]]
-UI["85"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["85"]["Image"] = [[rbxassetid://90565992513886]]
+UI["85"]["Size"] = UDim2.new(0.12767, 0, 0.16051, 0)
 UI["85"]["BackgroundTransparency"] = 1
-UI["85"]["Name"] = [[glow]]
-UI["85"]["Position"] = UDim2.new(0, 0, 0.00175, 0)
+UI["85"]["Name"] = [[Delete]]
+UI["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["85"]["Position"] = UDim2.new(0.80672, 0, 0.08081, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.SaveScript \\ --
-UI["86"] = Instance.new("LocalScript", UI["82"])
-UI["86"]["Name"] = [[SaveScript]]
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.ScriptFrame.ImageButton.Delete.UIAspectRatioConstraint \\ --
+UI["86"] = Instance.new("UIAspectRatioConstraint", UI["85"])
+UI["86"]["AspectRatio"] = 1.06061
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame \\ --
-UI["87"] = Instance.new("ScrollingFrame", UI["82"])
-UI["87"]["Active"] = true
-UI["87"]["BorderSizePixel"] = 0
-UI["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["87"]["ScrollBarImageTransparency"] = 0.8
-UI["87"]["Size"] = UDim2.new(1, 0, 0.90573, 0)
-UI["87"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
-UI["87"]["Position"] = UDim2.new(0, 0, 0.09427, 0)
-UI["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["87"]["BackgroundTransparency"] = 1
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.ScriptFrame.ImageButton.UIAspectRatioConstraint \\ --
+UI["87"] = Instance.new("UIAspectRatioConstraint", UI["81"])
+UI["87"]["AspectRatio"] = 1.3335
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame \\ --
-UI["88"] = Instance.new("Frame", UI["87"])
-UI["88"]["Visible"] = false
-UI["88"]["BorderSizePixel"] = 0
-UI["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["88"]["Size"] = UDim2.new(0.333, 0, 0.182, 0)
-UI["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["88"]["Name"] = [[ScriptFrame]]
-UI["88"]["BackgroundTransparency"] = 1
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.ScriptFrame.UIAspectRatioConstraint \\ --
+UI["88"] = Instance.new("UIAspectRatioConstraint", UI["80"])
+UI["88"]["AspectRatio"] = 1.29042
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton \\ --
-UI["89"] = Instance.new("ImageButton", UI["88"])
-UI["89"]["BorderSizePixel"] = 0
-UI["89"]["ScaleType"] = Enum.ScaleType.Crop
-UI["89"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["89"]["Image"] = [[rbxassetid://77930078757247]]
-UI["89"]["Size"] = UDim2.new(0.88934, 0, 0.86062, 0)
-UI["89"]["BackgroundTransparency"] = 1
-UI["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["89"]["Position"] = UDim2.new(0.05177, 0, 0.06733, 0)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.ScrollingFrame.UIGridLayout \\ --
+UI["89"] = Instance.new("UIGridLayout", UI["7f"])
+UI["89"]["CellSize"] = UDim2.new(0.333, 0, 0.182, 0)
+UI["89"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["89"]["CellPadding"] = UDim2.new(0, 0, 0, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.UICorner \\ --
-UI["8a"] = Instance.new("UICorner", UI["89"])
-UI["8a"]["CornerRadius"] = UDim.new(0.16, 0)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateTab \\ --
+UI["8a"] = Instance.new("ImageButton", UI["7a"])
+UI["8a"]["BorderSizePixel"] = 0
+UI["8a"]["ImageTransparency"] = 0.6
+UI["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8a"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
+UI["8a"]["Image"] = [[rbxassetid://83688012004614]]
+UI["8a"]["Size"] = UDim2.new(0.2123, 0, 0.10047, 0)
+UI["8a"]["BackgroundTransparency"] = 1
+UI["8a"]["Name"] = [[CreateTab]]
+UI["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8a"]["Position"] = UDim2.new(0.7877, 0, 0.19585, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.NameLabel \\ --
-UI["8b"] = Instance.new("TextLabel", UI["89"])
-UI["8b"]["TextWrapped"] = true
-UI["8b"]["BorderSizePixel"] = 0
-UI["8b"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["8b"]["TextTransparency"] = 0.6
-UI["8b"]["TextScaled"] = true
-UI["8b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["8b"]["TextSize"] = 14
-UI["8b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["8b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["8b"]["BackgroundTransparency"] = 1
-UI["8b"]["Size"] = UDim2.new(0.26651, 0, 0.17809, 0)
-UI["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["8b"]["Name"] = [[NameLabel]]
-UI["8b"]["Position"] = UDim2.new(0.06484, 0, 0.08081, 0)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateTab.UICorner \\ --
+UI["8b"] = Instance.new("UICorner", UI["8a"])
+UI["8b"]["CornerRadius"] = UDim.new(0.3, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.NameLabel.UIAspectRatioConstraint \\ --
-UI["8c"] = Instance.new("UIAspectRatioConstraint", UI["8b"])
-UI["8c"]["AspectRatio"] = 1.99558
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateTab.UIStroke \\ --
+UI["8c"] = Instance.new("UIStroke", UI["8a"])
+UI["8c"]["Color"] = Color3.fromRGB(57, 72, 99)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.Delete \\ --
-UI["8d"] = Instance.new("ImageButton", UI["89"])
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateTab.Frame \\ --
+UI["8d"] = Instance.new("Frame", UI["8a"])
 UI["8d"]["BorderSizePixel"] = 0
-UI["8d"]["ScaleType"] = Enum.ScaleType.Fit
-UI["8d"]["ImageTransparency"] = 0.6
-UI["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["8d"]["Image"] = [[rbxassetid://90565992513886]]
-UI["8d"]["Size"] = UDim2.new(0.12767, 0, 0.16051, 0)
-UI["8d"]["BackgroundTransparency"] = 1
-UI["8d"]["Name"] = [[Delete]]
+UI["8d"]["BackgroundColor3"] = Color3.fromRGB(57, 72, 99)
+UI["8d"]["Size"] = UDim2.new(0.006, 0, 1, 0)
+UI["8d"]["Position"] = UDim2.new(0.70396, 0, 0, 0)
 UI["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["8d"]["Position"] = UDim2.new(0.80672, 0, 0.08081, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.Delete.UIAspectRatioConstraint \\ --
-UI["8e"] = Instance.new("UIAspectRatioConstraint", UI["8d"])
-UI["8e"]["AspectRatio"] = 1.06061
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateTab.ImageLabel \\ --
+UI["8e"] = Instance.new("ImageLabel", UI["8a"])
+UI["8e"]["BorderSizePixel"] = 0
+UI["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8e"]["ScaleType"] = Enum.ScaleType.Fit
+UI["8e"]["ImageTransparency"] = 0.65
+UI["8e"]["Image"] = [[rbxassetid://113548820873804]]
+UI["8e"]["Size"] = UDim2.new(0.14291, 0, 0.49661, 0)
+UI["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8e"]["BackgroundTransparency"] = 1
+UI["8e"]["Position"] = UDim2.new(0.07431, 0, 0.23519, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.UIAspectRatioConstraint \\ --
-UI["8f"] = Instance.new("UIAspectRatioConstraint", UI["89"])
-UI["8f"]["AspectRatio"] = 1.3335
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateTab.TextLabel \\ --
+UI["8f"] = Instance.new("TextLabel", UI["8a"])
+UI["8f"]["TextWrapped"] = true
+UI["8f"]["BorderSizePixel"] = 0
+UI["8f"]["TextTransparency"] = 0.65
+UI["8f"]["TextScaled"] = true
+UI["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8f"]["TextSize"] = 14
+UI["8f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8f"]["BackgroundTransparency"] = 1
+UI["8f"]["Size"] = UDim2.new(0.14154, 0, 0.41919, 0)
+UI["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8f"]["Text"] = [[NEW]]
+UI["8f"]["Position"] = UDim2.new(0.30246, 0, 0.27093, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.UIAspectRatioConstraint \\ --
-UI["90"] = Instance.new("UIAspectRatioConstraint", UI["88"])
-UI["90"]["AspectRatio"] = 1.29042
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateTab.ImageLabel \\ --
+UI["90"] = Instance.new("ImageLabel", UI["8a"])
+UI["90"]["BorderSizePixel"] = 0
+UI["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["90"]["ScaleType"] = Enum.ScaleType.Fit
+UI["90"]["ImageTransparency"] = 0.65
+UI["90"]["Image"] = [[rbxassetid://138665650299046]]
+UI["90"]["Size"] = UDim2.new(0.14384, 0, 0.49983, 0)
+UI["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["90"]["BackgroundTransparency"] = 1
+UI["90"]["Position"] = UDim2.new(0.78015, 0, 0.22925, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.UIGridLayout \\ --
-UI["91"] = Instance.new("UIGridLayout", UI["87"])
-UI["91"]["CellSize"] = UDim2.new(0.333, 0, 0.182, 0)
-UI["91"]["SortOrder"] = Enum.SortOrder.LayoutOrder
-UI["91"]["CellPadding"] = UDim2.new(0, 0, 0, 0)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.SearchBar \\ --
+UI["91"] = Instance.new("TextBox", UI["7a"])
+UI["91"]["CursorPosition"] = -1
+UI["91"]["TextColor3"] = Color3.fromRGB(252, 253, 255)
+UI["91"]["PlaceholderColor3"] = Color3.fromRGB(66, 68, 71)
+UI["91"]["BorderSizePixel"] = 0
+UI["91"]["TextWrapped"] = true
+UI["91"]["TextSize"] = 14
+UI["91"]["Name"] = [[SearchBar]]
+UI["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["91"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["91"]["ClearTextOnFocus"] = false
+UI["91"]["PlaceholderText"] = [[Search]]
+UI["91"]["Size"] = UDim2.new(0.77102, 0, 0.10076, 0)
+UI["91"]["Position"] = UDim2.new(0.00023, 0, 0.19585, 0)
+UI["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["91"]["Text"] = [[]]
+UI["91"]["BackgroundTransparency"] = 0.999
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.SearchBar \\ --
-UI["92"] = Instance.new("TextBox", UI["82"])
-UI["92"]["TextColor3"] = Color3.fromRGB(252, 253, 255)
-UI["92"]["PlaceholderColor3"] = Color3.fromRGB(66, 68, 71)
-UI["92"]["BorderSizePixel"] = 0
-UI["92"]["TextWrapped"] = true
-UI["92"]["TextSize"] = 14
-UI["92"]["Name"] = [[SearchBar]]
-UI["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["92"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["92"]["ClearTextOnFocus"] = false
-UI["92"]["PlaceholderText"] = [[Search]]
-UI["92"]["Size"] = UDim2.new(0.74509, 0, 0.08424, 0)
-UI["92"]["Position"] = UDim2.new(0.01717, 0, 0.02125, 0)
-UI["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["92"]["Text"] = [[]]
-UI["92"]["BackgroundTransparency"] = 0.999
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.SearchBar.UICorner \\ --
+UI["92"] = Instance.new("UICorner", UI["91"])
+UI["92"]["CornerRadius"] = UDim.new(0.3, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.SearchBar.UICorner \\ --
-UI["93"] = Instance.new("UICorner", UI["92"])
-UI["93"]["CornerRadius"] = UDim.new(0.3, 0)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.SearchBar.UIStroke \\ --
+UI["93"] = Instance.new("UIStroke", UI["91"])
+UI["93"]["Transparency"] = 0.4
+UI["93"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["93"]["Color"] = Color3.fromRGB(57, 71, 99)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.SearchBar.UIStroke \\ --
-UI["94"] = Instance.new("UIStroke", UI["92"])
-UI["94"]["Transparency"] = 0.4
-UI["94"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["94"]["Color"] = Color3.fromRGB(57, 71, 99)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame \\ --
+UI["94"] = Instance.new("Frame", UI["7a"])
+UI["94"]["Visible"] = false
+UI["94"]["BorderSizePixel"] = 0
+UI["94"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["94"]["Size"] = UDim2.new(0.3921, 0, 0.49401, 0)
+UI["94"]["Position"] = UDim2.new(0.257, 0, 0.356, 0)
+UI["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["94"]["Name"] = [[CreateFrame]]
+UI["94"]["BackgroundTransparency"] = 1
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab \\ --
-UI["95"] = Instance.new("ImageButton", UI["82"])
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Name Script \\ --
+UI["95"] = Instance.new("TextBox", UI["94"])
+UI["95"]["CursorPosition"] = -1
+UI["95"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["95"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
 UI["95"]["BorderSizePixel"] = 0
-UI["95"]["ImageTransparency"] = 0.6
-UI["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["95"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
-UI["95"]["Image"] = [[rbxassetid://83688012004614]]
-UI["95"]["Size"] = UDim2.new(0.20516, 0, 0.084, 0)
-UI["95"]["BackgroundTransparency"] = 1
-UI["95"]["Name"] = [[CreateTab]]
+UI["95"]["TextWrapped"] = true
+UI["95"]["TextTransparency"] = 0.6
+UI["95"]["TextSize"] = 14
+UI["95"]["Name"] = [[Name Script]]
+UI["95"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17)
+UI["95"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["95"]["PlaceholderText"] = [[Script Name]]
+UI["95"]["Size"] = UDim2.new(0.769, 0, 0.142, 0)
+UI["95"]["Position"] = UDim2.new(0.11522, 0, 0.23765, 0)
 UI["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["95"]["Position"] = UDim2.new(0.77816, 0, 0.02125, 0)
+UI["95"]["Text"] = [[]]
+UI["95"]["BackgroundTransparency"] = 0.999
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.UICorner \\ --
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Name Script.UICorner \\ --
 UI["96"] = Instance.new("UICorner", UI["95"])
 UI["96"]["CornerRadius"] = UDim.new(0.3, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.UIStroke \\ --
-UI["97"] = Instance.new("UIStroke", UI["95"])
-UI["97"]["Color"] = Color3.fromRGB(57, 72, 99)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Name Script.LocalScript \\ --
+UI["97"] = Instance.new("LocalScript", UI["95"])
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.Frame \\ --
-UI["98"] = Instance.new("Frame", UI["95"])
-UI["98"]["BorderSizePixel"] = 0
-UI["98"]["BackgroundColor3"] = Color3.fromRGB(57, 72, 99)
-UI["98"]["Size"] = UDim2.new(0.006, 0, 1, 0)
-UI["98"]["Position"] = UDim2.new(0.70396, 0, 0, 0)
-UI["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.ImageLabel \\ --
-UI["99"] = Instance.new("ImageLabel", UI["95"])
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Name Script.UIStroke \\ --
+UI["98"] = Instance.new("UIStroke", UI["95"])
+UI["98"]["Transparency"] = 0.8
+UI["98"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["98"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Script Code \\ --
+UI["99"] = Instance.new("TextBox", UI["94"])
+UI["99"]["CursorPosition"] = -1
+UI["99"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["99"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
 UI["99"]["BorderSizePixel"] = 0
-UI["99"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["99"]["ScaleType"] = Enum.ScaleType.Fit
-UI["99"]["ImageTransparency"] = 0.65
-UI["99"]["Image"] = [[rbxassetid://113548820873804]]
-UI["99"]["Size"] = UDim2.new(0.14291, 0, 0.49661, 0)
+UI["99"]["TextWrapped"] = true
+UI["99"]["TextTransparency"] = 0.6
+UI["99"]["TextSize"] = 14
+UI["99"]["Name"] = [[Script Code]]
+UI["99"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17)
+UI["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["99"]["PlaceholderText"] = [[Input Script]]
+UI["99"]["Size"] = UDim2.new(0.769, 0, 0.142, 0)
+UI["99"]["Position"] = UDim2.new(0.11522, 0, 0.48564, 0)
 UI["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["99"]["BackgroundTransparency"] = 1
-UI["99"]["Position"] = UDim2.new(0.07431, 0, 0.23519, 0)
+UI["99"]["Text"] = [[]]
+UI["99"]["BackgroundTransparency"] = 0.999
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.TextLabel \\ --
-UI["9a"] = Instance.new("TextLabel", UI["95"])
-UI["9a"]["TextWrapped"] = true
-UI["9a"]["BorderSizePixel"] = 0
-UI["9a"]["TextTransparency"] = 0.65
-UI["9a"]["TextScaled"] = true
-UI["9a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["9a"]["TextSize"] = 14
-UI["9a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["9a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["9a"]["BackgroundTransparency"] = 1
-UI["9a"]["Size"] = UDim2.new(0.14154, 0, 0.41919, 0)
-UI["9a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["9a"]["Text"] = [[NEW]]
-UI["9a"]["Position"] = UDim2.new(0.30246, 0, 0.27093, 0)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Script Code.UICorner \\ --
+UI["9a"] = Instance.new("UICorner", UI["99"])
+UI["9a"]["CornerRadius"] = UDim.new(0.3, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.ImageLabel \\ --
-UI["9b"] = Instance.new("ImageLabel", UI["95"])
-UI["9b"]["BorderSizePixel"] = 0
-UI["9b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["9b"]["ScaleType"] = Enum.ScaleType.Fit
-UI["9b"]["ImageTransparency"] = 0.65
-UI["9b"]["Image"] = [[rbxassetid://138665650299046]]
-UI["9b"]["Size"] = UDim2.new(0.14384, 0, 0.49983, 0)
-UI["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["9b"]["BackgroundTransparency"] = 1
-UI["9b"]["Position"] = UDim2.new(0.78015, 0, 0.22925, 0)
-
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame \\ --
-UI["9c"] = Instance.new("Frame", UI["82"])
-UI["9c"]["Visible"] = false
-UI["9c"]["BorderSizePixel"] = 0
-UI["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["9c"]["Size"] = UDim2.new(0.3921, 0, 0.59128, 0)
-UI["9c"]["Position"] = UDim2.new(0.25667, 0, 0.22889, 0)
-UI["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["9c"]["Name"] = [[CreateFrame]]
-UI["9c"]["BackgroundTransparency"] = 0.999
-
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Name Script \\ --
-UI["9d"] = Instance.new("TextBox", UI["9c"])
-UI["9d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["9d"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
-UI["9d"]["BorderSizePixel"] = 0
-UI["9d"]["TextWrapped"] = true
-UI["9d"]["TextTransparency"] = 0.6
-UI["9d"]["TextSize"] = 14
-UI["9d"]["Name"] = [[Name Script]]
-UI["9d"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17)
-UI["9d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["9d"]["PlaceholderText"] = [[Script Name]]
-UI["9d"]["Size"] = UDim2.new(0.72779, 0, 0.14169, 0)
-UI["9d"]["Position"] = UDim2.new(0.13413, 0, 0.27386, 0)
-UI["9d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["9d"]["Text"] = [[]]
-UI["9d"]["BackgroundTransparency"] = 1
-
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Name Script.UICorner \\ --
-UI["9e"] = Instance.new("UICorner", UI["9d"])
-UI["9e"]["CornerRadius"] = UDim.new(0.3, 0)
-
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Name Script.LocalScript \\ --
-UI["9f"] = Instance.new("LocalScript", UI["9d"])
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Script Code.LocalScript \\ --
+UI["9b"] = Instance.new("LocalScript", UI["99"])
 
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Name Script.UIStroke \\ --
-UI["a0"] = Instance.new("UIStroke", UI["9d"])
-UI["a0"]["Transparency"] = 0.8
-UI["a0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["a0"]["Color"] = Color3.fromRGB(255, 255, 255)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Script Code.UIStroke \\ --
+UI["9c"] = Instance.new("UIStroke", UI["99"])
+UI["9c"]["Transparency"] = 0.8
+UI["9c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["9c"]["Color"] = Color3.fromRGB(255, 255, 255)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Script Code \\ --
-UI["a1"] = Instance.new("TextBox", UI["9c"])
-UI["a1"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["a1"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
-UI["a1"]["BorderSizePixel"] = 0
-UI["a1"]["TextWrapped"] = true
-UI["a1"]["TextTransparency"] = 0.6
-UI["a1"]["TextSize"] = 14
-UI["a1"]["Name"] = [[Script Code]]
-UI["a1"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17)
-UI["a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["a1"]["PlaceholderText"] = [[Input Script]]
-UI["a1"]["Size"] = UDim2.new(0.72779, 0, 0.142, 0)
-UI["a1"]["Position"] = UDim2.new(0.13413, 0, 0.51099, 0)
-UI["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["a1"]["Text"] = [[]]
-UI["a1"]["BackgroundTransparency"] = 1
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.UICorner \\ --
+UI["9d"] = Instance.new("UICorner", UI["94"])
+UI["9d"]["CornerRadius"] = UDim.new(0.16, 0)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Script Code.UICorner \\ --
-UI["a2"] = Instance.new("UICorner", UI["a1"])
-UI["a2"]["CornerRadius"] = UDim.new(0.3, 0)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.UIStroke \\ --
+UI["9e"] = Instance.new("UIStroke", UI["94"])
+UI["9e"]["Color"] = Color3.fromRGB(57, 71, 99)
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Script Code.LocalScript \\ --
-UI["a3"] = Instance.new("LocalScript", UI["a1"])
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Create \\ --
+UI["9f"] = Instance.new("TextButton", UI["94"])
+UI["9f"]["BorderSizePixel"] = 0
+UI["9f"]["TextTransparency"] = 0.6
+UI["9f"]["TextSize"] = 14
+UI["9f"]["SelectionOrder"] = 1
+UI["9f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["9f"]["Size"] = UDim2.new(0.76859, 0, 0.142, 0)
+UI["9f"]["BackgroundTransparency"] = 0.999
+UI["9f"]["Name"] = [[Create]]
+UI["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9f"]["Text"] = [[Create Script]]
+UI["9f"]["Position"] = UDim2.new(0.1128, 0, 0.72433, 0)
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Create.UICorner \\ --
+UI["a0"] = Instance.new("UICorner", UI["9f"])
+UI["a0"]["CornerRadius"] = UDim.new(0.3, 0)
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Create.UIStroke \\ --
+UI["a1"] = Instance.new("UIStroke", UI["9f"])
+UI["a1"]["Transparency"] = 0.8
+UI["a1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["a1"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Exit \\ --
+UI["a2"] = Instance.new("TextButton", UI["94"])
+UI["a2"]["BorderSizePixel"] = 0
+UI["a2"]["TextSize"] = 14
+UI["a2"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a2"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a2"]["Size"] = UDim2.new(0.11822, 0, 0.1359, 0)
+UI["a2"]["BackgroundTransparency"] = 1
+UI["a2"]["Name"] = [[Exit]]
+UI["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a2"]["Text"] = [[x]]
+UI["a2"]["Position"] = UDim2.new(0.83394, 0, 0.05569, 0)
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Exit.UICorner \\ --
+UI["a3"] = Instance.new("UICorner", UI["a2"])
 
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Script Code.UIStroke \\ --
-UI["a4"] = Instance.new("UIStroke", UI["a1"])
-UI["a4"]["Transparency"] = 0.8
-UI["a4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["a4"]["Color"] = Color3.fromRGB(255, 255, 255)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Exit.LocalScript \\ --
+UI["a4"] = Instance.new("LocalScript", UI["a2"])
 
--- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.TextCreate \\ --
-UI["a5"] = Instance.new("TextLabel", UI["9c"])
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.TextLabel \\ --
+UI["a5"] = Instance.new("TextLabel", UI["94"])
 UI["a5"]["BorderSizePixel"] = 0
 UI["a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["a5"]["TextSize"] = 14
 UI["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["a5"]["BackgroundTransparency"] = 1
-UI["a5"]["Size"] = UDim2.new(0.30354, 0, 0.1359, 0)
+UI["a5"]["Size"] = UDim2.new(0.14154, 0, 0.06165, 0)
 UI["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["a5"]["Text"] = [[ Script Creator]]
-UI["a5"]["Name"] = [[TextCreate]]
-UI["a5"]["Position"] = UDim2.new(0.34708, 0, 0.05931, 0)
+UI["a5"]["Text"] = [[Script Creator]]
+UI["a5"]["Position"] = UDim2.new(0.42533, 0, 0.09053, 0)
+
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.LocalScript \\ --
+UI["a6"] = Instance.new("LocalScript", UI["5a"])
+
+
+-- // StarterGui.NebulaUI.FolderFrame \\ --
+UI["a7"] = Instance.new("Frame", UI["1"])
+UI["a7"]["BorderSizePixel"] = 0
+UI["a7"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
+UI["a7"]["Size"] = UDim2.new(0.636, 0, 0.877, 0)
+UI["a7"]["Position"] = UDim2.new(1, 0, 0.059, 0)
+UI["a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a7"]["Name"] = [[FolderFrame]]
+UI["a7"]["BackgroundTransparency"] = 0.06
+
+-- // StarterGui.NebulaUI.FolderFrame.UICorner \\ --
+UI["a8"] = Instance.new("UICorner", UI["a7"])
+UI["a8"]["CornerRadius"] = UDim.new(0.05, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame \\ --
+UI["a9"] = Instance.new("Frame", UI["a7"])
+UI["a9"]["BorderSizePixel"] = 0
+UI["a9"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
+UI["a9"]["Size"] = UDim2.new(0.95105, 0, 0.93471, 0)
+UI["a9"]["Position"] = UDim2.new(0.02428, 0, 0.03021, 0)
+UI["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a9"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.UICorner \\ --
+UI["aa"] = Instance.new("UICorner", UI["a9"])
+UI["aa"]["CornerRadius"] = UDim.new(0.03, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.UIStroke \\ --
+UI["ab"] = Instance.new("UIStroke", UI["a9"])
+UI["ab"]["Color"] = Color3.fromRGB(57, 71, 99)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.glow \\ --
+UI["ac"] = Instance.new("ImageLabel", UI["a9"])
+UI["ac"]["Interactable"] = false
+UI["ac"]["BorderSizePixel"] = 0
+UI["ac"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ac"]["ImageTransparency"] = 0.6
+UI["ac"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
+UI["ac"]["Image"] = [[rbxassetid://106985554407226]]
+UI["ac"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ac"]["BackgroundTransparency"] = 1
+UI["ac"]["Name"] = [[glow]]
+UI["ac"]["Position"] = UDim2.new(0, 0, 0.00175, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.SaveScript \\ --
+UI["ad"] = Instance.new("LocalScript", UI["a9"])
+UI["ad"]["Name"] = [[SaveScript]]
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame \\ --
+UI["ae"] = Instance.new("ScrollingFrame", UI["a9"])
+UI["ae"]["Active"] = true
+UI["ae"]["BorderSizePixel"] = 0
+UI["ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ae"]["ScrollBarImageTransparency"] = 0.8
+UI["ae"]["Size"] = UDim2.new(1, 0, 0.90573, 0)
+UI["ae"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ae"]["Position"] = UDim2.new(0, 0, 0.09427, 0)
+UI["ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ae"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame \\ --
+UI["af"] = Instance.new("Frame", UI["ae"])
+UI["af"]["Visible"] = false
+UI["af"]["BorderSizePixel"] = 0
+UI["af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["af"]["Size"] = UDim2.new(0.333, 0, 0.182, 0)
+UI["af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["af"]["Name"] = [[ScriptFrame]]
+UI["af"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton \\ --
+UI["b0"] = Instance.new("ImageButton", UI["af"])
+UI["b0"]["BorderSizePixel"] = 0
+UI["b0"]["ScaleType"] = Enum.ScaleType.Crop
+UI["b0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b0"]["Image"] = [[rbxassetid://77930078757247]]
+UI["b0"]["Size"] = UDim2.new(0.88934, 0, 0.86062, 0)
+UI["b0"]["BackgroundTransparency"] = 1
+UI["b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b0"]["Position"] = UDim2.new(0.05177, 0, 0.06733, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.UICorner \\ --
+UI["b1"] = Instance.new("UICorner", UI["b0"])
+UI["b1"]["CornerRadius"] = UDim.new(0.16, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.NameLabel \\ --
+UI["b2"] = Instance.new("TextLabel", UI["b0"])
+UI["b2"]["TextWrapped"] = true
+UI["b2"]["BorderSizePixel"] = 0
+UI["b2"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["b2"]["TextTransparency"] = 0.6
+UI["b2"]["TextScaled"] = true
+UI["b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b2"]["TextSize"] = 14
+UI["b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b2"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b2"]["BackgroundTransparency"] = 1
+UI["b2"]["Size"] = UDim2.new(0.26651, 0, 0.17809, 0)
+UI["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b2"]["Name"] = [[NameLabel]]
+UI["b2"]["Position"] = UDim2.new(0.06484, 0, 0.08081, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.NameLabel.UIAspectRatioConstraint \\ --
+UI["b3"] = Instance.new("UIAspectRatioConstraint", UI["b2"])
+UI["b3"]["AspectRatio"] = 1.99558
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.Delete \\ --
+UI["b4"] = Instance.new("ImageButton", UI["b0"])
+UI["b4"]["BorderSizePixel"] = 0
+UI["b4"]["ScaleType"] = Enum.ScaleType.Fit
+UI["b4"]["ImageTransparency"] = 0.6
+UI["b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b4"]["Image"] = [[rbxassetid://90565992513886]]
+UI["b4"]["Size"] = UDim2.new(0.12767, 0, 0.16051, 0)
+UI["b4"]["BackgroundTransparency"] = 1
+UI["b4"]["Name"] = [[Delete]]
+UI["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b4"]["Position"] = UDim2.new(0.80672, 0, 0.08081, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.Delete.UIAspectRatioConstraint \\ --
+UI["b5"] = Instance.new("UIAspectRatioConstraint", UI["b4"])
+UI["b5"]["AspectRatio"] = 1.06061
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.ImageButton.UIAspectRatioConstraint \\ --
+UI["b6"] = Instance.new("UIAspectRatioConstraint", UI["b0"])
+UI["b6"]["AspectRatio"] = 1.3335
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.ScriptFrame.UIAspectRatioConstraint \\ --
+UI["b7"] = Instance.new("UIAspectRatioConstraint", UI["af"])
+UI["b7"]["AspectRatio"] = 1.29042
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.ScrollingFrame.UIGridLayout \\ --
+UI["b8"] = Instance.new("UIGridLayout", UI["ae"])
+UI["b8"]["CellSize"] = UDim2.new(0.333, 0, 0.182, 0)
+UI["b8"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["b8"]["CellPadding"] = UDim2.new(0, 0, 0, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.SearchBar \\ --
+UI["b9"] = Instance.new("TextBox", UI["a9"])
+UI["b9"]["TextColor3"] = Color3.fromRGB(252, 253, 255)
+UI["b9"]["PlaceholderColor3"] = Color3.fromRGB(66, 68, 71)
+UI["b9"]["BorderSizePixel"] = 0
+UI["b9"]["TextWrapped"] = true
+UI["b9"]["TextSize"] = 14
+UI["b9"]["Name"] = [[SearchBar]]
+UI["b9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b9"]["ClearTextOnFocus"] = false
+UI["b9"]["PlaceholderText"] = [[Search]]
+UI["b9"]["Size"] = UDim2.new(0.74509, 0, 0.08424, 0)
+UI["b9"]["Position"] = UDim2.new(0.01717, 0, 0.02125, 0)
+UI["b9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b9"]["Text"] = [[]]
+UI["b9"]["BackgroundTransparency"] = 0.999
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.SearchBar.UICorner \\ --
+UI["ba"] = Instance.new("UICorner", UI["b9"])
+UI["ba"]["CornerRadius"] = UDim.new(0.3, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.SearchBar.UIStroke \\ --
+UI["bb"] = Instance.new("UIStroke", UI["b9"])
+UI["bb"]["Transparency"] = 0.4
+UI["bb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["bb"]["Color"] = Color3.fromRGB(57, 71, 99)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab \\ --
+UI["bc"] = Instance.new("ImageButton", UI["a9"])
+UI["bc"]["BorderSizePixel"] = 0
+UI["bc"]["ImageTransparency"] = 0.6
+UI["bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["bc"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
+UI["bc"]["Image"] = [[rbxassetid://83688012004614]]
+UI["bc"]["Size"] = UDim2.new(0.20516, 0, 0.084, 0)
+UI["bc"]["BackgroundTransparency"] = 1
+UI["bc"]["Name"] = [[CreateTab]]
+UI["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["bc"]["Position"] = UDim2.new(0.77816, 0, 0.02125, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.UICorner \\ --
+UI["bd"] = Instance.new("UICorner", UI["bc"])
+UI["bd"]["CornerRadius"] = UDim.new(0.3, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.UIStroke \\ --
+UI["be"] = Instance.new("UIStroke", UI["bc"])
+UI["be"]["Color"] = Color3.fromRGB(57, 72, 99)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.Frame \\ --
+UI["bf"] = Instance.new("Frame", UI["bc"])
+UI["bf"]["BorderSizePixel"] = 0
+UI["bf"]["BackgroundColor3"] = Color3.fromRGB(57, 72, 99)
+UI["bf"]["Size"] = UDim2.new(0.006, 0, 1, 0)
+UI["bf"]["Position"] = UDim2.new(0.70396, 0, 0, 0)
+UI["bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.ImageLabel \\ --
+UI["c0"] = Instance.new("ImageLabel", UI["bc"])
+UI["c0"]["BorderSizePixel"] = 0
+UI["c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c0"]["ScaleType"] = Enum.ScaleType.Fit
+UI["c0"]["ImageTransparency"] = 0.65
+UI["c0"]["Image"] = [[rbxassetid://113548820873804]]
+UI["c0"]["Size"] = UDim2.new(0.14291, 0, 0.49661, 0)
+UI["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c0"]["BackgroundTransparency"] = 1
+UI["c0"]["Position"] = UDim2.new(0.07431, 0, 0.23519, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.TextLabel \\ --
+UI["c1"] = Instance.new("TextLabel", UI["bc"])
+UI["c1"]["TextWrapped"] = true
+UI["c1"]["BorderSizePixel"] = 0
+UI["c1"]["TextTransparency"] = 0.65
+UI["c1"]["TextScaled"] = true
+UI["c1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c1"]["TextSize"] = 14
+UI["c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c1"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c1"]["BackgroundTransparency"] = 1
+UI["c1"]["Size"] = UDim2.new(0.14154, 0, 0.41919, 0)
+UI["c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c1"]["Text"] = [[NEW]]
+UI["c1"]["Position"] = UDim2.new(0.30246, 0, 0.27093, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateTab.ImageLabel \\ --
+UI["c2"] = Instance.new("ImageLabel", UI["bc"])
+UI["c2"]["BorderSizePixel"] = 0
+UI["c2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c2"]["ScaleType"] = Enum.ScaleType.Fit
+UI["c2"]["ImageTransparency"] = 0.65
+UI["c2"]["Image"] = [[rbxassetid://138665650299046]]
+UI["c2"]["Size"] = UDim2.new(0.14384, 0, 0.49983, 0)
+UI["c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c2"]["BackgroundTransparency"] = 1
+UI["c2"]["Position"] = UDim2.new(0.78015, 0, 0.22925, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame \\ --
+UI["c3"] = Instance.new("Frame", UI["a9"])
+UI["c3"]["Visible"] = false
+UI["c3"]["BorderSizePixel"] = 0
+UI["c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c3"]["Size"] = UDim2.new(0.3921, 0, 0.59128, 0)
+UI["c3"]["Position"] = UDim2.new(0.25667, 0, 0.22889, 0)
+UI["c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c3"]["Name"] = [[CreateFrame]]
+UI["c3"]["BackgroundTransparency"] = 0.999
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Name Script \\ --
+UI["c4"] = Instance.new("TextBox", UI["c3"])
+UI["c4"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c4"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c4"]["BorderSizePixel"] = 0
+UI["c4"]["TextWrapped"] = true
+UI["c4"]["TextTransparency"] = 0.6
+UI["c4"]["TextSize"] = 14
+UI["c4"]["Name"] = [[Name Script]]
+UI["c4"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17)
+UI["c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c4"]["PlaceholderText"] = [[Script Name]]
+UI["c4"]["Size"] = UDim2.new(0.72779, 0, 0.14169, 0)
+UI["c4"]["Position"] = UDim2.new(0.13413, 0, 0.27386, 0)
+UI["c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c4"]["Text"] = [[]]
+UI["c4"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Name Script.UICorner \\ --
+UI["c5"] = Instance.new("UICorner", UI["c4"])
+UI["c5"]["CornerRadius"] = UDim.new(0.3, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Name Script.LocalScript \\ --
+UI["c6"] = Instance.new("LocalScript", UI["c4"])
+
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Name Script.UIStroke \\ --
+UI["c7"] = Instance.new("UIStroke", UI["c4"])
+UI["c7"]["Transparency"] = 0.8
+UI["c7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["c7"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Script Code \\ --
+UI["c8"] = Instance.new("TextBox", UI["c3"])
+UI["c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c8"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c8"]["BorderSizePixel"] = 0
+UI["c8"]["TextWrapped"] = true
+UI["c8"]["TextTransparency"] = 0.6
+UI["c8"]["TextSize"] = 14
+UI["c8"]["Name"] = [[Script Code]]
+UI["c8"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17)
+UI["c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c8"]["PlaceholderText"] = [[Input Script]]
+UI["c8"]["Size"] = UDim2.new(0.72779, 0, 0.142, 0)
+UI["c8"]["Position"] = UDim2.new(0.13413, 0, 0.51099, 0)
+UI["c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c8"]["Text"] = [[]]
+UI["c8"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Script Code.UICorner \\ --
+UI["c9"] = Instance.new("UICorner", UI["c8"])
+UI["c9"]["CornerRadius"] = UDim.new(0.3, 0)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Script Code.LocalScript \\ --
+UI["ca"] = Instance.new("LocalScript", UI["c8"])
+
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Script Code.UIStroke \\ --
+UI["cb"] = Instance.new("UIStroke", UI["c8"])
+UI["cb"]["Transparency"] = 0.8
+UI["cb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["cb"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.TextCreate \\ --
+UI["cc"] = Instance.new("TextLabel", UI["c3"])
+UI["cc"]["BorderSizePixel"] = 0
+UI["cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["cc"]["TextSize"] = 14
+UI["cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["cc"]["BackgroundTransparency"] = 1
+UI["cc"]["Size"] = UDim2.new(0.30354, 0, 0.1359, 0)
+UI["cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cc"]["Text"] = [[ Script Creator]]
+UI["cc"]["Name"] = [[TextCreate]]
+UI["cc"]["Position"] = UDim2.new(0.34708, 0, 0.05931, 0)
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.TextCreate.LocalScript \\ --
-UI["a6"] = Instance.new("LocalScript", UI["a5"])
+UI["cd"] = Instance.new("LocalScript", UI["cc"])
 
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.UICorner \\ --
-UI["a7"] = Instance.new("UICorner", UI["9c"])
-UI["a7"]["CornerRadius"] = UDim.new(0.06, 0)
+UI["ce"] = Instance.new("UICorner", UI["c3"])
+UI["ce"]["CornerRadius"] = UDim.new(0.06, 0)
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.UIStroke \\ --
-UI["a8"] = Instance.new("UIStroke", UI["9c"])
-UI["a8"]["Color"] = Color3.fromRGB(57, 71, 99)
+UI["cf"] = Instance.new("UIStroke", UI["c3"])
+UI["cf"]["Color"] = Color3.fromRGB(57, 71, 99)
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Create \\ --
-UI["a9"] = Instance.new("TextButton", UI["9c"])
-UI["a9"]["BorderSizePixel"] = 0
-UI["a9"]["TextTransparency"] = 0.6
-UI["a9"]["TextSize"] = 14
-UI["a9"]["SelectionOrder"] = 1
-UI["a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["a9"]["Size"] = UDim2.new(0.728, 0, 0.142, 0)
-UI["a9"]["BackgroundTransparency"] = 1
-UI["a9"]["Name"] = [[Create]]
-UI["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["a9"]["Text"] = [[Create Script]]
-UI["a9"]["Position"] = UDim2.new(0.13763, 0, 0.72795, 0)
+UI["d0"] = Instance.new("TextButton", UI["c3"])
+UI["d0"]["BorderSizePixel"] = 0
+UI["d0"]["TextTransparency"] = 0.6
+UI["d0"]["TextSize"] = 14
+UI["d0"]["SelectionOrder"] = 1
+UI["d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d0"]["Size"] = UDim2.new(0.728, 0, 0.142, 0)
+UI["d0"]["BackgroundTransparency"] = 1
+UI["d0"]["Name"] = [[Create]]
+UI["d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d0"]["Text"] = [[Create Script]]
+UI["d0"]["Position"] = UDim2.new(0.13763, 0, 0.72795, 0)
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Create.UICorner \\ --
-UI["aa"] = Instance.new("UICorner", UI["a9"])
-UI["aa"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["d1"] = Instance.new("UICorner", UI["d0"])
+UI["d1"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Create.UIStroke \\ --
-UI["ab"] = Instance.new("UIStroke", UI["a9"])
-UI["ab"]["Transparency"] = 0.8
-UI["ab"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["ab"]["Color"] = Color3.fromRGB(255, 255, 255)
+UI["d2"] = Instance.new("UIStroke", UI["d0"])
+UI["d2"]["Transparency"] = 0.8
+UI["d2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["d2"]["Color"] = Color3.fromRGB(255, 255, 255)
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Exit \\ --
-UI["ac"] = Instance.new("TextButton", UI["9c"])
-UI["ac"]["BorderSizePixel"] = 0
-UI["ac"]["TextSize"] = 14
-UI["ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["ac"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
-UI["ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["ac"]["Size"] = UDim2.new(0.15917, 0, 0.1359, 0)
-UI["ac"]["BackgroundTransparency"] = 1
-UI["ac"]["Name"] = [[Exit]]
-UI["ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["ac"]["Text"] = [[x]]
-UI["ac"]["Position"] = UDim2.new(0.77092, 0, 0.05931, 0)
+UI["d3"] = Instance.new("TextButton", UI["c3"])
+UI["d3"]["BorderSizePixel"] = 0
+UI["d3"]["TextSize"] = 14
+UI["d3"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d3"]["Size"] = UDim2.new(0.15917, 0, 0.1359, 0)
+UI["d3"]["BackgroundTransparency"] = 1
+UI["d3"]["Name"] = [[Exit]]
+UI["d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d3"]["Text"] = [[x]]
+UI["d3"]["Position"] = UDim2.new(0.77092, 0, 0.05931, 0)
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Exit.UICorner \\ --
-UI["ad"] = Instance.new("UICorner", UI["ac"])
+UI["d4"] = Instance.new("UICorner", UI["d3"])
 
 
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Exit.LocalScript \\ --
-UI["ae"] = Instance.new("LocalScript", UI["ac"])
+UI["d5"] = Instance.new("LocalScript", UI["d3"])
 
 
 -- // StarterGui.NebulaUI.LocalScript \\ --
-UI["af"] = Instance.new("LocalScript", UI["1"])
+UI["d6"] = Instance.new("LocalScript", UI["1"])
 
 
 -- // StarterGui.NebulaUI.SearchFrame \\ --
-UI["b0"] = Instance.new("Frame", UI["1"])
-UI["b0"]["BorderSizePixel"] = 0
-UI["b0"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
-UI["b0"]["Size"] = UDim2.new(0.636, 0, 0.877, 0)
-UI["b0"]["Position"] = UDim2.new(1, 0, 0.059, 0)
-UI["b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["b0"]["Name"] = [[SearchFrame]]
-UI["b0"]["BackgroundTransparency"] = 0.06
+UI["d7"] = Instance.new("Frame", UI["1"])
+UI["d7"]["BorderSizePixel"] = 0
+UI["d7"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
+UI["d7"]["Size"] = UDim2.new(0.636, 0, 0.877, 0)
+UI["d7"]["Position"] = UDim2.new(1, 0, 0.059, 0)
+UI["d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d7"]["Name"] = [[SearchFrame]]
+UI["d7"]["BackgroundTransparency"] = 0.06
 
 -- // StarterGui.NebulaUI.SearchFrame.UICorner \\ --
-UI["b1"] = Instance.new("UICorner", UI["b0"])
-UI["b1"]["CornerRadius"] = UDim.new(0.05, 0)
+UI["d8"] = Instance.new("UICorner", UI["d7"])
+UI["d8"]["CornerRadius"] = UDim.new(0.05, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame \\ --
-UI["b2"] = Instance.new("Frame", UI["b0"])
-UI["b2"]["BorderSizePixel"] = 0
-UI["b2"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
-UI["b2"]["Size"] = UDim2.new(0.95105, 0, 0.93471, 0)
-UI["b2"]["Position"] = UDim2.new(0.02428, 0, 0.03021, 0)
-UI["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["b2"]["BackgroundTransparency"] = 1
+UI["d9"] = Instance.new("Frame", UI["d7"])
+UI["d9"]["BorderSizePixel"] = 0
+UI["d9"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14)
+UI["d9"]["Size"] = UDim2.new(0.95105, 0, 0.93471, 0)
+UI["d9"]["Position"] = UDim2.new(0.02428, 0, 0.03021, 0)
+UI["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d9"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.UICorner \\ --
-UI["b3"] = Instance.new("UICorner", UI["b2"])
-UI["b3"]["CornerRadius"] = UDim.new(0, 15)
+UI["da"] = Instance.new("UICorner", UI["d9"])
+UI["da"]["CornerRadius"] = UDim.new(0, 15)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.UIStroke \\ --
-UI["b4"] = Instance.new("UIStroke", UI["b2"])
-UI["b4"]["Color"] = Color3.fromRGB(57, 71, 99)
+UI["db"] = Instance.new("UIStroke", UI["d9"])
+UI["db"]["Color"] = Color3.fromRGB(57, 71, 99)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.glow \\ --
-UI["b5"] = Instance.new("ImageLabel", UI["b2"])
-UI["b5"]["Interactable"] = false
-UI["b5"]["BorderSizePixel"] = 0
-UI["b5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["b5"]["ImageTransparency"] = 0.6
-UI["b5"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
-UI["b5"]["Image"] = [[rbxassetid://106985554407226]]
-UI["b5"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["b5"]["BackgroundTransparency"] = 1
-UI["b5"]["Name"] = [[glow]]
+UI["dc"] = Instance.new("ImageLabel", UI["d9"])
+UI["dc"]["Interactable"] = false
+UI["dc"]["BorderSizePixel"] = 0
+UI["dc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["dc"]["ImageTransparency"] = 0.6
+UI["dc"]["ImageColor3"] = Color3.fromRGB(45, 108, 164)
+UI["dc"]["Image"] = [[rbxassetid://106985554407226]]
+UI["dc"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["dc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["dc"]["BackgroundTransparency"] = 1
+UI["dc"]["Name"] = [[glow]]
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.APIScript \\ --
-UI["b6"] = Instance.new("LocalScript", UI["b2"])
-UI["b6"]["Name"] = [[APIScript]]
+UI["dd"] = Instance.new("LocalScript", UI["d9"])
+UI["dd"]["Name"] = [[APIScript]]
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.SearchBar \\ --
-UI["b7"] = Instance.new("TextBox", UI["b2"])
-UI["b7"]["TextColor3"] = Color3.fromRGB(252, 253, 255)
-UI["b7"]["PlaceholderColor3"] = Color3.fromRGB(66, 68, 71)
-UI["b7"]["BorderSizePixel"] = 0
-UI["b7"]["TextWrapped"] = true
-UI["b7"]["TextSize"] = 14
-UI["b7"]["Name"] = [[SearchBar]]
-UI["b7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["b7"]["ClearTextOnFocus"] = false
-UI["b7"]["PlaceholderText"] = [[Search]]
-UI["b7"]["Size"] = UDim2.new(0.9292, 0, 0.084, 0)
-UI["b7"]["Position"] = UDim2.new(0.03539, 0, 0.04556, 0)
-UI["b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["b7"]["Text"] = [[]]
-UI["b7"]["BackgroundTransparency"] = 0.999
+UI["de"] = Instance.new("TextBox", UI["d9"])
+UI["de"]["TextColor3"] = Color3.fromRGB(252, 253, 255)
+UI["de"]["PlaceholderColor3"] = Color3.fromRGB(66, 68, 71)
+UI["de"]["BorderSizePixel"] = 0
+UI["de"]["TextWrapped"] = true
+UI["de"]["TextSize"] = 14
+UI["de"]["Name"] = [[SearchBar]]
+UI["de"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["de"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["de"]["ClearTextOnFocus"] = false
+UI["de"]["PlaceholderText"] = [[Search]]
+UI["de"]["Size"] = UDim2.new(0.9292, 0, 0.084, 0)
+UI["de"]["Position"] = UDim2.new(0.03539, 0, 0.04556, 0)
+UI["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["de"]["Text"] = [[]]
+UI["de"]["BackgroundTransparency"] = 0.999
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.SearchBar.UICorner \\ --
-UI["b8"] = Instance.new("UICorner", UI["b7"])
-UI["b8"]["CornerRadius"] = UDim.new(0, 18)
+UI["df"] = Instance.new("UICorner", UI["de"])
+UI["df"]["CornerRadius"] = UDim.new(0, 18)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.SearchBar.UIStroke \\ --
-UI["b9"] = Instance.new("UIStroke", UI["b7"])
-UI["b9"]["Transparency"] = 0.4
-UI["b9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["b9"]["Color"] = Color3.fromRGB(57, 71, 99)
+UI["e0"] = Instance.new("UIStroke", UI["de"])
+UI["e0"]["Transparency"] = 0.4
+UI["e0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["e0"]["Color"] = Color3.fromRGB(57, 71, 99)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame \\ --
-UI["ba"] = Instance.new("ScrollingFrame", UI["b2"])
-UI["ba"]["Active"] = true
-UI["ba"]["BorderSizePixel"] = 0
-UI["ba"]["TopImage"] = [[rbxassetid://118416695297655]]
-UI["ba"]["MidImage"] = [[rbxassetid://118416695297655]]
-UI["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["ba"]["BottomImage"] = [[rbxassetid://118416695297655]]
-UI["ba"]["Size"] = UDim2.new(1.00011, 0, 0.86034, 0)
-UI["ba"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
-UI["ba"]["Position"] = UDim2.new(0, 0, 0.14269, 0)
-UI["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["ba"]["BackgroundTransparency"] = 0.999
+UI["e1"] = Instance.new("ScrollingFrame", UI["d9"])
+UI["e1"]["Active"] = true
+UI["e1"]["BorderSizePixel"] = 0
+UI["e1"]["TopImage"] = [[rbxassetid://118416695297655]]
+UI["e1"]["MidImage"] = [[rbxassetid://118416695297655]]
+UI["e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e1"]["BottomImage"] = [[rbxassetid://118416695297655]]
+UI["e1"]["Size"] = UDim2.new(1.00011, 0, 0.86034, 0)
+UI["e1"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e1"]["Position"] = UDim2.new(0, 0, 0.14269, 0)
+UI["e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e1"]["BackgroundTransparency"] = 0.999
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script \\ --
-UI["bb"] = Instance.new("Frame", UI["ba"])
-UI["bb"]["Visible"] = false
-UI["bb"]["BorderSizePixel"] = 0
-UI["bb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["bb"]["Size"] = UDim2.new(0.33315, 0, 0.1657, 0)
-UI["bb"]["Position"] = UDim2.new(0, 0, 0, 0)
-UI["bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["bb"]["Name"] = [[Script]]
-UI["bb"]["BackgroundTransparency"] = 0.999
+UI["e2"] = Instance.new("Frame", UI["e1"])
+UI["e2"]["Visible"] = false
+UI["e2"]["BorderSizePixel"] = 0
+UI["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e2"]["Size"] = UDim2.new(0.33315, 0, 0.1657, 0)
+UI["e2"]["Position"] = UDim2.new(0, 0, 0, 0)
+UI["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e2"]["Name"] = [[Script]]
+UI["e2"]["BackgroundTransparency"] = 0.999
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel \\ --
-UI["bc"] = Instance.new("ImageLabel", UI["bb"])
-UI["bc"]["BorderSizePixel"] = 0
-UI["bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["bc"]["ScaleType"] = Enum.ScaleType.Crop
-UI["bc"]["Image"] = [[http://www.roblox.com/asset/?id=91717322021928]]
-UI["bc"]["Size"] = UDim2.new(0.78037, 0, 0.7702, 0)
-UI["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["bc"]["Position"] = UDim2.new(0.10627, 0, 0.11178, 0)
+UI["e3"] = Instance.new("ImageLabel", UI["e2"])
+UI["e3"]["BorderSizePixel"] = 0
+UI["e3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e3"]["ScaleType"] = Enum.ScaleType.Crop
+UI["e3"]["Image"] = [[http://www.roblox.com/asset/?id=91717322021928]]
+UI["e3"]["Size"] = UDim2.new(0.78037, 0, 0.7702, 0)
+UI["e3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e3"]["Position"] = UDim2.new(0.10627, 0, 0.11178, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.UICorner \\ --
-UI["bd"] = Instance.new("UICorner", UI["bc"])
-UI["bd"]["CornerRadius"] = UDim.new(0.15, 0)
+UI["e4"] = Instance.new("UICorner", UI["e3"])
+UI["e4"]["CornerRadius"] = UDim.new(0.15, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton \\ --
-UI["be"] = Instance.new("TextButton", UI["bc"])
-UI["be"]["BorderSizePixel"] = 0
-UI["be"]["TextSize"] = 14
-UI["be"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["be"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["be"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["be"]["BackgroundTransparency"] = 0.999
-UI["be"]["Name"] = [[ScriptButton]]
-UI["be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["be"]["Text"] = [[]]
+UI["e5"] = Instance.new("TextButton", UI["e3"])
+UI["e5"]["BorderSizePixel"] = 0
+UI["e5"]["TextSize"] = 14
+UI["e5"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e5"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["e5"]["BackgroundTransparency"] = 0.999
+UI["e5"]["Name"] = [[ScriptButton]]
+UI["e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e5"]["Text"] = [[]]
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.GameLabel \\ --
-UI["bf"] = Instance.new("TextLabel", UI["be"])
-UI["bf"]["BorderSizePixel"] = 0
-UI["bf"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["bf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["bf"]["TextSize"] = 14
-UI["bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["bf"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["bf"]["BackgroundTransparency"] = 1
-UI["bf"]["Size"] = UDim2.new(0.72321, 0, 0.12612, 0)
-UI["bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["bf"]["Text"] = [[DEAD RAILS ALPHA]]
-UI["bf"]["Name"] = [[GameLabel]]
-UI["bf"]["Position"] = UDim2.new(0.08826, 0, 0.76374, 0)
+UI["e6"] = Instance.new("TextLabel", UI["e5"])
+UI["e6"]["BorderSizePixel"] = 0
+UI["e6"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["e6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e6"]["TextSize"] = 14
+UI["e6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["e6"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e6"]["BackgroundTransparency"] = 1
+UI["e6"]["Size"] = UDim2.new(0.72321, 0, 0.12612, 0)
+UI["e6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e6"]["Text"] = [[DEAD RAILS ALPHA]]
+UI["e6"]["Name"] = [[GameLabel]]
+UI["e6"]["Position"] = UDim2.new(0.08826, 0, 0.76374, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.NameLabel \\ --
-UI["c0"] = Instance.new("TextLabel", UI["be"])
-UI["c0"]["TextWrapped"] = true
-UI["c0"]["BorderSizePixel"] = 0
-UI["c0"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["c0"]["TextSize"] = 14
-UI["c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["c0"]["BackgroundTransparency"] = 1
-UI["c0"]["Size"] = UDim2.new(0.72321, 0, 0.12612, 0)
-UI["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["c0"]["Text"] = [[SIGMA NAME VERY LONG]]
-UI["c0"]["Name"] = [[NameLabel]]
-UI["c0"]["Position"] = UDim2.new(0.08826, 0, 0.63479, 0)
+UI["e7"] = Instance.new("TextLabel", UI["e5"])
+UI["e7"]["TextWrapped"] = true
+UI["e7"]["BorderSizePixel"] = 0
+UI["e7"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e7"]["TextSize"] = 14
+UI["e7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["e7"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e7"]["BackgroundTransparency"] = 1
+UI["e7"]["Size"] = UDim2.new(0.72321, 0, 0.12612, 0)
+UI["e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e7"]["Text"] = [[SIGMA NAME VERY LONG]]
+UI["e7"]["Name"] = [[NameLabel]]
+UI["e7"]["Position"] = UDim2.new(0.08826, 0, 0.63479, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.UnverifiedLabel \\ --
-UI["c1"] = Instance.new("Frame", UI["be"])
-UI["c1"]["Visible"] = false
-UI["c1"]["BorderSizePixel"] = 0
-UI["c1"]["BackgroundColor3"] = Color3.fromRGB(237, 246, 71)
-UI["c1"]["Size"] = UDim2.new(0.369, 0, 0.161, 0)
-UI["c1"]["Position"] = UDim2.new(0.084, 0, 0.104, 0)
-UI["c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["c1"]["Name"] = [[UnverifiedLabel]]
-UI["c1"]["BackgroundTransparency"] = 0.6
+UI["e8"] = Instance.new("Frame", UI["e5"])
+UI["e8"]["Visible"] = false
+UI["e8"]["BorderSizePixel"] = 0
+UI["e8"]["BackgroundColor3"] = Color3.fromRGB(237, 246, 71)
+UI["e8"]["Size"] = UDim2.new(0.369, 0, 0.161, 0)
+UI["e8"]["Position"] = UDim2.new(0.084, 0, 0.104, 0)
+UI["e8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e8"]["Name"] = [[UnverifiedLabel]]
+UI["e8"]["BackgroundTransparency"] = 0.6
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.UnverifiedLabel.UICorner \\ --
-UI["c2"] = Instance.new("UICorner", UI["c1"])
-UI["c2"]["CornerRadius"] = UDim.new(0.4, 0)
+UI["e9"] = Instance.new("UICorner", UI["e8"])
+UI["e9"]["CornerRadius"] = UDim.new(0.4, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.UnverifiedLabel.UIStroke \\ --
-UI["c3"] = Instance.new("UIStroke", UI["c1"])
-UI["c3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["c3"]["Color"] = Color3.fromRGB(237, 246, 71)
+UI["ea"] = Instance.new("UIStroke", UI["e8"])
+UI["ea"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["ea"]["Color"] = Color3.fromRGB(237, 246, 71)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.UnverifiedLabel.ImageLabel \\ --
-UI["c4"] = Instance.new("ImageLabel", UI["c1"])
-UI["c4"]["BorderSizePixel"] = 0
-UI["c4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["c4"]["ScaleType"] = Enum.ScaleType.Fit
-UI["c4"]["ImageColor3"] = Color3.fromRGB(237, 246, 71)
-UI["c4"]["Image"] = [[rbxassetid://10709790387]]
-UI["c4"]["Size"] = UDim2.new(0.14854, 0, 0.47441, 0)
-UI["c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["c4"]["BackgroundTransparency"] = 1
-UI["c4"]["Position"] = UDim2.new(0.0824, 0, 0.27891, 0)
+UI["eb"] = Instance.new("ImageLabel", UI["e8"])
+UI["eb"]["BorderSizePixel"] = 0
+UI["eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["eb"]["ScaleType"] = Enum.ScaleType.Fit
+UI["eb"]["ImageColor3"] = Color3.fromRGB(237, 246, 71)
+UI["eb"]["Image"] = [[rbxassetid://10709790387]]
+UI["eb"]["Size"] = UDim2.new(0.14854, 0, 0.47441, 0)
+UI["eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["eb"]["BackgroundTransparency"] = 1
+UI["eb"]["Position"] = UDim2.new(0.0824, 0, 0.27891, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.UnverifiedLabel.TextLabel \\ --
-UI["c5"] = Instance.new("TextLabel", UI["c1"])
-UI["c5"]["TextWrapped"] = true
-UI["c5"]["BorderSizePixel"] = 0
-UI["c5"]["TextScaled"] = true
-UI["c5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["c5"]["TextSize"] = 14
-UI["c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["c5"]["TextColor3"] = Color3.fromRGB(237, 246, 71)
-UI["c5"]["BackgroundTransparency"] = 1
-UI["c5"]["Size"] = UDim2.new(0.52563, 0, 0.47441, 0)
-UI["c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["c5"]["Text"] = [[Unverified]]
-UI["c5"]["Position"] = UDim2.new(0.28867, 0, 0.25297, 0)
+UI["ec"] = Instance.new("TextLabel", UI["e8"])
+UI["ec"]["TextWrapped"] = true
+UI["ec"]["BorderSizePixel"] = 0
+UI["ec"]["TextScaled"] = true
+UI["ec"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ec"]["TextSize"] = 14
+UI["ec"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["ec"]["TextColor3"] = Color3.fromRGB(237, 246, 71)
+UI["ec"]["BackgroundTransparency"] = 1
+UI["ec"]["Size"] = UDim2.new(0.52563, 0, 0.47441, 0)
+UI["ec"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ec"]["Text"] = [[Unverified]]
+UI["ec"]["Position"] = UDim2.new(0.28867, 0, 0.25297, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.VerifiedLabel \\ --
-UI["c6"] = Instance.new("Frame", UI["be"])
-UI["c6"]["BorderSizePixel"] = 0
-UI["c6"]["BackgroundColor3"] = Color3.fromRGB(0, 241, 246)
-UI["c6"]["Size"] = UDim2.new(0.369, 0, 0.161, 0)
-UI["c6"]["Position"] = UDim2.new(0.084, 0, 0.104, 0)
-UI["c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["c6"]["Name"] = [[VerifiedLabel]]
-UI["c6"]["BackgroundTransparency"] = 0.6
+UI["ed"] = Instance.new("Frame", UI["e5"])
+UI["ed"]["BorderSizePixel"] = 0
+UI["ed"]["BackgroundColor3"] = Color3.fromRGB(0, 241, 246)
+UI["ed"]["Size"] = UDim2.new(0.369, 0, 0.161, 0)
+UI["ed"]["Position"] = UDim2.new(0.084, 0, 0.104, 0)
+UI["ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ed"]["Name"] = [[VerifiedLabel]]
+UI["ed"]["BackgroundTransparency"] = 0.6
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.VerifiedLabel.UICorner \\ --
-UI["c7"] = Instance.new("UICorner", UI["c6"])
-UI["c7"]["CornerRadius"] = UDim.new(0.4, 0)
+UI["ee"] = Instance.new("UICorner", UI["ed"])
+UI["ee"]["CornerRadius"] = UDim.new(0.4, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.VerifiedLabel.UIStroke \\ --
-UI["c8"] = Instance.new("UIStroke", UI["c6"])
-UI["c8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["c8"]["Color"] = Color3.fromRGB(0, 241, 246)
+UI["ef"] = Instance.new("UIStroke", UI["ed"])
+UI["ef"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["ef"]["Color"] = Color3.fromRGB(0, 241, 246)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.VerifiedLabel.ImageLabel \\ --
-UI["c9"] = Instance.new("ImageLabel", UI["c6"])
-UI["c9"]["BorderSizePixel"] = 0
-UI["c9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["c9"]["ScaleType"] = Enum.ScaleType.Fit
-UI["c9"]["ImageColor3"] = Color3.fromRGB(0, 241, 246)
-UI["c9"]["Image"] = [[rbxassetid://10709790387]]
-UI["c9"]["Size"] = UDim2.new(0.14854, 0, 0.47441, 0)
-UI["c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["c9"]["BackgroundTransparency"] = 1
-UI["c9"]["Position"] = UDim2.new(0.0824, 0, 0.27891, 0)
+UI["f0"] = Instance.new("ImageLabel", UI["ed"])
+UI["f0"]["BorderSizePixel"] = 0
+UI["f0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f0"]["ScaleType"] = Enum.ScaleType.Fit
+UI["f0"]["ImageColor3"] = Color3.fromRGB(0, 241, 246)
+UI["f0"]["Image"] = [[rbxassetid://10709790387]]
+UI["f0"]["Size"] = UDim2.new(0.14854, 0, 0.47441, 0)
+UI["f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f0"]["BackgroundTransparency"] = 1
+UI["f0"]["Position"] = UDim2.new(0.0824, 0, 0.27891, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.VerifiedLabel.TextLabel \\ --
-UI["ca"] = Instance.new("TextLabel", UI["c6"])
-UI["ca"]["TextWrapped"] = true
-UI["ca"]["BorderSizePixel"] = 0
-UI["ca"]["TextScaled"] = true
-UI["ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["ca"]["TextSize"] = 14
-UI["ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["ca"]["TextColor3"] = Color3.fromRGB(0, 241, 246)
-UI["ca"]["BackgroundTransparency"] = 1
-UI["ca"]["Size"] = UDim2.new(0.3476, 0, 0.47441, 0)
-UI["ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["ca"]["Text"] = [[Verified]]
-UI["ca"]["Position"] = UDim2.new(0.32649, 0, 0.27891, 0)
+UI["f1"] = Instance.new("TextLabel", UI["ed"])
+UI["f1"]["TextWrapped"] = true
+UI["f1"]["BorderSizePixel"] = 0
+UI["f1"]["TextScaled"] = true
+UI["f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f1"]["TextSize"] = 14
+UI["f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["f1"]["TextColor3"] = Color3.fromRGB(0, 241, 246)
+UI["f1"]["BackgroundTransparency"] = 1
+UI["f1"]["Size"] = UDim2.new(0.3476, 0, 0.47441, 0)
+UI["f1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f1"]["Text"] = [[Verified]]
+UI["f1"]["Position"] = UDim2.new(0.32649, 0, 0.27891, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.ViewLabel \\ --
-UI["cb"] = Instance.new("Frame", UI["be"])
-UI["cb"]["BorderSizePixel"] = 0
-UI["cb"]["BackgroundColor3"] = Color3.fromRGB(83, 224, 250)
-UI["cb"]["Size"] = UDim2.new(0.219, 0, 0.161, 0)
-UI["cb"]["Position"] = UDim2.new(0.52, 0, 0.104, 0)
-UI["cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["cb"]["Name"] = [[ViewLabel]]
-UI["cb"]["BackgroundTransparency"] = 0.6
+UI["f2"] = Instance.new("Frame", UI["e5"])
+UI["f2"]["BorderSizePixel"] = 0
+UI["f2"]["BackgroundColor3"] = Color3.fromRGB(83, 224, 250)
+UI["f2"]["Size"] = UDim2.new(0.219, 0, 0.161, 0)
+UI["f2"]["Position"] = UDim2.new(0.52, 0, 0.104, 0)
+UI["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f2"]["Name"] = [[ViewLabel]]
+UI["f2"]["BackgroundTransparency"] = 0.6
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.ViewLabel.UIStroke \\ --
-UI["cc"] = Instance.new("UIStroke", UI["cb"])
-UI["cc"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["cc"]["Color"] = Color3.fromRGB(83, 224, 250)
+UI["f3"] = Instance.new("UIStroke", UI["f2"])
+UI["f3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["f3"]["Color"] = Color3.fromRGB(83, 224, 250)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.ViewLabel.UICorner \\ --
-UI["cd"] = Instance.new("UICorner", UI["cb"])
-UI["cd"]["CornerRadius"] = UDim.new(0.4, 0)
+UI["f4"] = Instance.new("UICorner", UI["f2"])
+UI["f4"]["CornerRadius"] = UDim.new(0.4, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.ViewLabel.ImageLabel \\ --
-UI["ce"] = Instance.new("ImageLabel", UI["cb"])
-UI["ce"]["BorderSizePixel"] = 0
-UI["ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["ce"]["ScaleType"] = Enum.ScaleType.Fit
-UI["ce"]["ImageColor3"] = Color3.fromRGB(83, 224, 250)
-UI["ce"]["Image"] = [[rbxassetid://10723346959]]
-UI["ce"]["Size"] = UDim2.new(0.2598, 0, 0.47441, 0)
-UI["ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["ce"]["BackgroundTransparency"] = 1
-UI["ce"]["Position"] = UDim2.new(0.13452, 0, 0.27889, 0)
+UI["f5"] = Instance.new("ImageLabel", UI["f2"])
+UI["f5"]["BorderSizePixel"] = 0
+UI["f5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f5"]["ScaleType"] = Enum.ScaleType.Fit
+UI["f5"]["ImageColor3"] = Color3.fromRGB(83, 224, 250)
+UI["f5"]["Image"] = [[rbxassetid://10723346959]]
+UI["f5"]["Size"] = UDim2.new(0.2598, 0, 0.47441, 0)
+UI["f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f5"]["BackgroundTransparency"] = 1
+UI["f5"]["Position"] = UDim2.new(0.13452, 0, 0.27889, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.Script.ImageLabel.ScriptButton.ViewLabel.TextLabel \\ --
-UI["cf"] = Instance.new("TextLabel", UI["cb"])
-UI["cf"]["TextWrapped"] = true
-UI["cf"]["BorderSizePixel"] = 0
-UI["cf"]["TextScaled"] = true
-UI["cf"]["BackgroundColor3"] = Color3.fromRGB(83, 224, 250)
-UI["cf"]["TextSize"] = 14
-UI["cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["cf"]["TextColor3"] = Color3.fromRGB(83, 224, 250)
-UI["cf"]["BackgroundTransparency"] = 1
-UI["cf"]["Size"] = UDim2.new(0.47334, 0, 0.47394, 0)
-UI["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["cf"]["Text"] = [[40K]]
-UI["cf"]["Position"] = UDim2.new(0.38911, 0, 0.27954, 0)
+UI["f6"] = Instance.new("TextLabel", UI["f2"])
+UI["f6"]["TextWrapped"] = true
+UI["f6"]["BorderSizePixel"] = 0
+UI["f6"]["TextScaled"] = true
+UI["f6"]["BackgroundColor3"] = Color3.fromRGB(83, 224, 250)
+UI["f6"]["TextSize"] = 14
+UI["f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["f6"]["TextColor3"] = Color3.fromRGB(83, 224, 250)
+UI["f6"]["BackgroundTransparency"] = 1
+UI["f6"]["Size"] = UDim2.new(0.47334, 0, 0.47394, 0)
+UI["f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f6"]["Text"] = [[40K]]
+UI["f6"]["Position"] = UDim2.new(0.38911, 0, 0.27954, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.ScrollingFrame.UIGridLayout \\ --
-UI["d0"] = Instance.new("UIGridLayout", UI["ba"])
-UI["d0"]["CellSize"] = UDim2.new(0.333, 0, 0.166, 0)
-UI["d0"]["SortOrder"] = Enum.SortOrder.LayoutOrder
-UI["d0"]["CellPadding"] = UDim2.new(0, 0, 0, 0)
+UI["f7"] = Instance.new("UIGridLayout", UI["e1"])
+UI["f7"]["CellSize"] = UDim2.new(0.333, 0, 0.166, 0)
+UI["f7"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["f7"]["CellPadding"] = UDim2.new(0, 0, 0, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification \\ --
-UI["d1"] = Instance.new("Frame", UI["b2"])
-UI["d1"]["Visible"] = false
-UI["d1"]["BorderSizePixel"] = 0
-UI["d1"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
-UI["d1"]["Size"] = UDim2.new(0.60116, 0, 0.52139, 0)
-UI["d1"]["Position"] = UDim2.new(-0.04447, 0, 0.24224, 0)
-UI["d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["d1"]["Name"] = [[Notification]]
-UI["d1"]["BackgroundTransparency"] = 0.06
+UI["f8"] = Instance.new("Frame", UI["d9"])
+UI["f8"]["Visible"] = false
+UI["f8"]["BorderSizePixel"] = 0
+UI["f8"]["BackgroundColor3"] = Color3.fromRGB(23, 24, 29)
+UI["f8"]["Size"] = UDim2.new(0.60116, 0, 0.52139, 0)
+UI["f8"]["Position"] = UDim2.new(-0.04447, 0, 0.24224, 0)
+UI["f8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f8"]["Name"] = [[Notification]]
+UI["f8"]["BackgroundTransparency"] = 0.06
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.UICorner \\ --
-UI["d2"] = Instance.new("UICorner", UI["d1"])
-UI["d2"]["CornerRadius"] = UDim.new(0.11, 0)
+UI["f9"] = Instance.new("UICorner", UI["f8"])
+UI["f9"]["CornerRadius"] = UDim.new(0.11, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame \\ --
-UI["d3"] = Instance.new("Frame", UI["d1"])
-UI["d3"]["BorderSizePixel"] = 0
-UI["d3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["d3"]["Size"] = UDim2.new(0.91826, 0, 0.88172, 0)
-UI["d3"]["Position"] = UDim2.new(0.04087, 0, 0.0577, 0)
-UI["d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["d3"]["BackgroundTransparency"] = 1
+UI["fa"] = Instance.new("Frame", UI["f8"])
+UI["fa"]["BorderSizePixel"] = 0
+UI["fa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["fa"]["Size"] = UDim2.new(0.91826, 0, 0.88172, 0)
+UI["fa"]["Position"] = UDim2.new(0.04087, 0, 0.0577, 0)
+UI["fa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fa"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.UICorner \\ --
-UI["d4"] = Instance.new("UICorner", UI["d3"])
-UI["d4"]["CornerRadius"] = UDim.new(0.08, 0)
+UI["fb"] = Instance.new("UICorner", UI["fa"])
+UI["fb"]["CornerRadius"] = UDim.new(0.08, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.UIStroke \\ --
-UI["d5"] = Instance.new("UIStroke", UI["d3"])
-UI["d5"]["Color"] = Color3.fromRGB(57, 71, 99)
+UI["fc"] = Instance.new("UIStroke", UI["fa"])
+UI["fc"]["Color"] = Color3.fromRGB(57, 71, 99)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.Frame \\ --
-UI["d6"] = Instance.new("Frame", UI["d3"])
-UI["d6"]["BorderSizePixel"] = 0
-UI["d6"]["BackgroundColor3"] = Color3.fromRGB(57, 71, 99)
-UI["d6"]["Size"] = UDim2.new(0.149, 0, 0.231, 0)
-UI["d6"]["Position"] = UDim2.new(0.04, 0, 0.062, 0)
-UI["d6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fd"] = Instance.new("Frame", UI["fa"])
+UI["fd"]["BorderSizePixel"] = 0
+UI["fd"]["BackgroundColor3"] = Color3.fromRGB(57, 71, 99)
+UI["fd"]["Size"] = UDim2.new(0.149, 0, 0.231, 0)
+UI["fd"]["Position"] = UDim2.new(0.04, 0, 0.062, 0)
+UI["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.Frame.UICorner \\ --
-UI["d7"] = Instance.new("UICorner", UI["d6"])
-UI["d7"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["fe"] = Instance.new("UICorner", UI["fd"])
+UI["fe"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.Frame.ImageLabel \\ --
-UI["d8"] = Instance.new("ImageLabel", UI["d6"])
-UI["d8"]["BorderSizePixel"] = 0
-UI["d8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["d8"]["ScaleType"] = Enum.ScaleType.Fit
-UI["d8"]["Image"] = [[rbxassetid://109560465642622]]
-UI["d8"]["Size"] = UDim2.new(0.50425, 0, 0.50425, 0)
-UI["d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["d8"]["BackgroundTransparency"] = 1
-UI["d8"]["Position"] = UDim2.new(0.23729, 0, 0.2463, 0)
+UI["ff"] = Instance.new("ImageLabel", UI["fd"])
+UI["ff"]["BorderSizePixel"] = 0
+UI["ff"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ff"]["ScaleType"] = Enum.ScaleType.Fit
+UI["ff"]["Image"] = [[rbxassetid://109560465642622]]
+UI["ff"]["Size"] = UDim2.new(0.50425, 0, 0.50425, 0)
+UI["ff"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ff"]["BackgroundTransparency"] = 1
+UI["ff"]["Position"] = UDim2.new(0.23729, 0, 0.2463, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.TextLabel \\ --
-UI["d9"] = Instance.new("TextLabel", UI["d3"])
-UI["d9"]["TextWrapped"] = true
-UI["d9"]["BorderSizePixel"] = 0
-UI["d9"]["TextScaled"] = true
-UI["d9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["d9"]["TextSize"] = 14
-UI["d9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Normal)
-UI["d9"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["d9"]["BackgroundTransparency"] = 1
-UI["d9"]["Size"] = UDim2.new(0.50999, 0, 0.13611, 0)
-UI["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["d9"]["Text"] = [[Are You Sure About That]]
-UI["d9"]["Position"] = UDim2.new(0.23563, 0, 0.1189, 0)
+UI["100"] = Instance.new("TextLabel", UI["fa"])
+UI["100"]["TextWrapped"] = true
+UI["100"]["BorderSizePixel"] = 0
+UI["100"]["TextScaled"] = true
+UI["100"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["100"]["TextSize"] = 14
+UI["100"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Normal)
+UI["100"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["100"]["BackgroundTransparency"] = 1
+UI["100"]["Size"] = UDim2.new(0.50999, 0, 0.13611, 0)
+UI["100"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["100"]["Text"] = [[Are You Sure About That]]
+UI["100"]["Position"] = UDim2.new(0.23563, 0, 0.1189, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.TextLabel \\ --
-UI["da"] = Instance.new("TextLabel", UI["d3"])
-UI["da"]["TextWrapped"] = true
-UI["da"]["BorderSizePixel"] = 0
-UI["da"]["TextScaled"] = true
-UI["da"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["da"]["TextSize"] = 14
-UI["da"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["da"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["da"]["BackgroundTransparency"] = 1
-UI["da"]["Size"] = UDim2.new(0.9233, 0, 0.31607, 0)
-UI["da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["da"]["Text"] = [[Are you sure you want to run this script ? Heads Up ! We are not responsible for any consequences or damages resulting from the execution of scripts.]]
-UI["da"]["Position"] = UDim2.new(0.03851, 0, 0.38065, 0)
+UI["101"] = Instance.new("TextLabel", UI["fa"])
+UI["101"]["TextWrapped"] = true
+UI["101"]["BorderSizePixel"] = 0
+UI["101"]["TextScaled"] = true
+UI["101"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["101"]["TextSize"] = 14
+UI["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["101"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["101"]["BackgroundTransparency"] = 1
+UI["101"]["Size"] = UDim2.new(0.9233, 0, 0.31607, 0)
+UI["101"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["101"]["Text"] = [[Are you sure you want to run this script ? Heads Up ! We are not responsible for any consequences or damages resulting from the execution of scripts.]]
+UI["101"]["Position"] = UDim2.new(0.03851, 0, 0.38065, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.ContinueButton \\ --
-UI["db"] = Instance.new("TextButton", UI["d3"])
-UI["db"]["BorderSizePixel"] = 0
-UI["db"]["TextSize"] = 14
-UI["db"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["db"]["BackgroundColor3"] = Color3.fromRGB(57, 71, 99)
-UI["db"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-UI["db"]["Size"] = UDim2.new(0.256, 0, 0.14682, 0)
-UI["db"]["Name"] = [[ContinueButton]]
-UI["db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["db"]["Text"] = [[Continue]]
-UI["db"]["Position"] = UDim2.new(0.70369, 0, 0.78844, 0)
+UI["102"] = Instance.new("TextButton", UI["fa"])
+UI["102"]["BorderSizePixel"] = 0
+UI["102"]["TextSize"] = 14
+UI["102"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["102"]["BackgroundColor3"] = Color3.fromRGB(57, 71, 99)
+UI["102"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+UI["102"]["Size"] = UDim2.new(0.256, 0, 0.14682, 0)
+UI["102"]["Name"] = [[ContinueButton]]
+UI["102"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["102"]["Text"] = [[Continue]]
+UI["102"]["Position"] = UDim2.new(0.70369, 0, 0.78844, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.ContinueButton.UICorner \\ --
-UI["dc"] = Instance.new("UICorner", UI["db"])
-UI["dc"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["103"] = Instance.new("UICorner", UI["102"])
+UI["103"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.CancelButton \\ --
-UI["dd"] = Instance.new("TextButton", UI["d3"])
-UI["dd"]["BorderSizePixel"] = 0
-UI["dd"]["TextSize"] = 14
-UI["dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["dd"]["BackgroundColor3"] = Color3.fromRGB(57, 71, 99)
-UI["dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["dd"]["Size"] = UDim2.new(0.256, 0, 0.14682, 0)
-UI["dd"]["BackgroundTransparency"] = 0.6
-UI["dd"]["Name"] = [[CancelButton]]
-UI["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["dd"]["Text"] = [[Cancel]]
-UI["dd"]["Position"] = UDim2.new(0.41543, 0, 0.78844, 0)
+UI["104"] = Instance.new("TextButton", UI["fa"])
+UI["104"]["BorderSizePixel"] = 0
+UI["104"]["TextSize"] = 14
+UI["104"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["104"]["BackgroundColor3"] = Color3.fromRGB(57, 71, 99)
+UI["104"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["104"]["Size"] = UDim2.new(0.256, 0, 0.14682, 0)
+UI["104"]["BackgroundTransparency"] = 0.6
+UI["104"]["Name"] = [[CancelButton]]
+UI["104"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["104"]["Text"] = [[Cancel]]
+UI["104"]["Position"] = UDim2.new(0.41543, 0, 0.78844, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.CancelButton.UICorner \\ --
-UI["de"] = Instance.new("UICorner", UI["dd"])
-UI["de"]["CornerRadius"] = UDim.new(0.3, 0)
+UI["105"] = Instance.new("UICorner", UI["104"])
+UI["105"]["CornerRadius"] = UDim.new(0.3, 0)
 
 -- // StarterGui.NebulaUI.SearchFrame.Frame.Notification.Frame.CancelButton.UIStroke \\ --
-UI["df"] = Instance.new("UIStroke", UI["dd"])
-UI["df"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["df"]["Color"] = Color3.fromRGB(57, 71, 99)
+UI["106"] = Instance.new("UIStroke", UI["104"])
+UI["106"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["106"]["Color"] = Color3.fromRGB(57, 71, 99)
 
 -- // StarterGui.NebulaUI.NebulaButton.UIDrag \\ --
 local function SCRIPT_7()
-	local script = UI["7"]
+local script = UI["7"]
 	-- Made by Real_IceyDev (@lceyDex) --
 	-- Simple UI dragger (PC Only/Any device that has a mouse) --
-
+	
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-
+	
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-
+	
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -2037,7 +2377,7 @@ local function SCRIPT_7()
 			end)
 		end
 	end)
-
+	
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -2049,27 +2389,27 @@ end
 task.spawn(SCRIPT_7)
 -- // StarterGui.NebulaUI.Frame.Frame.LocalScript \\ --
 local function SCRIPT_3a()
-	local script = UI["3a"]
+local script = UI["3a"]
 	local TweenService = game:GetService("TweenService")
-
+	
 	local closeButton = script.Parent:FindFirstChild("CloseButton")
 	local nebulaButton = script.Parent.Parent.Parent:FindFirstChild("NebulaButton")
-
+	
 	if closeButton and nebulaButton then
 		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-
+	
 		local downPosition = UDim2.new(0, 273, 0, 12)
 		local upPosition = UDim2.new(0, 273, 0, -73)
-
+	
 		local function moveButton(targetPosition)
 			local tween = TweenService:Create(nebulaButton, tweenInfo, {Position = targetPosition})
 			tween:Play()
 		end
-
+	
 		closeButton.MouseButton1Click:Connect(function()
 			moveButton(downPosition)
 		end)
-
+	
 		nebulaButton.MouseButton1Click:Connect(function()
 			moveButton(upPosition)
 		end)
@@ -2078,13 +2418,13 @@ end
 task.spawn(SCRIPT_3a)
 -- // StarterGui.NebulaUI.Frame.Frame.LocalScript \\ --
 local function SCRIPT_3b()
-	local script = UI["3b"]
+local script = UI["3b"]
 	local tweenService = game:GetService("TweenService")
 	local editorButton = script.Parent:FindFirstChild("EditorButton")
 	local configButton = script.Parent:FindFirstChild("ConfigButton")
 	local folderButton = script.Parent:FindFirstChild("FolderButton")
 	local searchButton = script.Parent:FindFirstChild("SearchButton")
-
+	
 	local function tweenTransparency(button, imageTransparency, strokeTransparency)
 		local uiStroke = button:FindFirstChildOfClass("UIStroke")
 		local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
@@ -2095,32 +2435,32 @@ local function SCRIPT_3b()
 			strokeTween:Play()
 		end
 	end
-
+	
 	local function resetButtonUI(buttons)
 		for _, button in pairs(buttons) do
 			tweenTransparency(button, 1, 1)
 		end
 	end
-
+	
 	local function highlightButton(button)
 		tweenTransparency(button, 0.6, 0)
 	end
-
+	
 	editorButton.MouseButton1Click:Connect(function()
 		resetButtonUI({configButton, folderButton, searchButton})
 		highlightButton(editorButton)
 	end)
-
+	
 	configButton.MouseButton1Click:Connect(function()
 		resetButtonUI({editorButton, folderButton, searchButton})
 		highlightButton(configButton)
 	end)
-
+	
 	folderButton.MouseButton1Click:Connect(function()
 		resetButtonUI({editorButton, configButton, searchButton})
 		highlightButton(folderButton)
 	end)
-
+	
 	searchButton.MouseButton1Click:Connect(function()
 		resetButtonUI({editorButton, configButton, folderButton})
 		highlightButton(searchButton)
@@ -2128,14 +2468,14 @@ local function SCRIPT_3b()
 end
 task.spawn(SCRIPT_3b)
 -- // StarterGui.NebulaUI.EditorFrame.EditorFunctions \\ --
-local function SCRIPT_40()
-	local script = UI["40"]
+local function SCRIPT_3f()
+local script = UI["3f"]
 	local SyntaxEditor = script.Parent:WaitForChild("Frame"):WaitForChild("ScrollingFrame"):WaitForChild("SyntaxEditor")
-
+	
 	local function RemoveRichText(input)
 		return input:gsub("<[^>]->", "")
 	end
-
+	
 	local function RunExecute(v)
 		if dtc and dtc.schedule then
 			return dtc.schedule(v)
@@ -2143,47 +2483,47 @@ local function SCRIPT_40()
 			return loadstring(v)()
 		end
 	end
-
+	
 	script.Parent:WaitForChild("ExecuteButton").MouseButton1Click:Connect(function()
 		RunExecute(RemoveRichText(SyntaxEditor.Text))
 	end)
-
+	
 	script.Parent:WaitForChild("ClearButton").MouseButton1Click:Connect(function()
 		SyntaxEditor.Text = ""
 	end)
-
+	
 	script.Parent:WaitForChild("PasteButton").MouseButton1Click:Connect(function()
 		SyntaxEditor.Text = RemoveRichText((getclipboard or function() end)())
 	end)
-
-
+	
+	
 end
-task.spawn(SCRIPT_40)
+task.spawn(SCRIPT_3f)
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame.Line.Line Number.LocalScript \\ --
-local function SCRIPT_52()
-	local script = UI["52"]
+local function SCRIPT_51()
+local script = UI["51"]
 	script.Parent.Parent.Parent.SyntaxEditor:GetPropertyChangedSignal("Text"):Connect(function()
 		local Lines = #script.Parent.Parent.Parent.SyntaxEditor.Text:split("\n")
-
+		
 		local Num = ""
-
+		
 		for i = 1, Lines do
 			Num = Num .. tostring(i) .. "\n"
 		end
-
+		
 		script.Parent.Text = Num
 	end)
 end
-task.spawn(SCRIPT_52)
+task.spawn(SCRIPT_51)
 -- // StarterGui.NebulaUI.EditorFrame.Frame.ScrollingFrame.SyntaxEditor.SyntaxScript \\ --
-local function SCRIPT_54()
-	local script = UI["54"]
+local function SCRIPT_53()
+local script = UI["53"]
 	SyntaxEditor = script.Parent 
-
+	
 	isfile = isfile or function(...)end
 	readfile = readfile or function(...)end
 	writefile = writefile or function(...)end
-
+	
 	ListCode = {
 		["local"] = "rgb(173, 216, 230)",
 		["function"] = "rgb(70, 130, 180)",
@@ -2203,15 +2543,19 @@ local function SCRIPT_54()
 		["not"] = "rgb(70, 130, 180)",
 		["repeat"] = "rgb(135, 206, 235)",
 		["until"] = "rgb(135, 206, 235)",
+		
 		["%d+%.?%d*"] = "rgb(0, 0, 255)",
+		
 		['"[^"]*"'] = "rgb(176, 224, 230)",
 		["'[^']*'"] = "rgb(176, 224, 230)",
+		
 		["[%+%-%*/%%%^#=<>~]"] = "rgb(70, 130, 180)",
 		["[%(%)]"] = "rgb(70, 130, 180)",
 		["[%[%]]"] = "rgb(70, 130, 180)",
 		["[%{%}]"] = "rgb(70, 130, 180)",
 		["%."] = "rgb(30, 144, 255)",
 		[":"] = "rgb(30, 144, 255)",
+		
 		["game"] = "rgb(0, 191, 255)",
 		["workspace"] = "rgb(0, 191, 255)",
 		["script"] = "rgb(0, 191, 255)",
@@ -2224,47 +2568,48 @@ local function SCRIPT_54()
 		["wait"] = "rgb(0, 191, 255)",
 		["loadstring"] = "rgb(0, 0, 139)"
 	}
-
-
-
+	
+	
+	
 	function SetSyntax(Str)
 		for i, v in pairs(ListCode) do
 			Str = Str:gsub("%f[%a]" .. i .. "%f[%A]", '<font color="' .. v .. '">' .. i .. '</font>')
 		end
-
+	
 		return Str
 	end
-
+	
 	task.spawn(function()
 		if isfile("Editor.txt") and readfile("Editor.txt") ~= "" and readfile("Editor.txt") ~= nil then
 			SyntaxEditor.Text = SetSyntax(readfile("Editor.txt"):gsub("<[^>]+>", ""))
 		end
-
+	
 		SyntaxEditor.Focused:Connect(function()
 			SyntaxEditor.Text = SyntaxEditor.Text:gsub("<[^>]+>", "")
 		end)
-
+	
 		SyntaxEditor.FocusLost:Connect(function()
 			SyntaxEditor.Text = SetSyntax(SyntaxEditor.Text:gsub("<[^>]+>", ""))
 		end)
-
+	
 		if SyntaxEditor.Text ~= "" then
 			SyntaxEditor.Text = SetSyntax(SyntaxEditor.Text:gsub("<[^>]+>", ""))
 		end
-
+	
 		SyntaxEditor:GetPropertyChangedSignal("Text"):Connect(function()
 			if SyntaxEditor.Text ~= "" then
 				writefile("Editor.txt", SyntaxEditor.Text)
 			end
 		end)
 	end)
+	
 end
-task.spawn(SCRIPT_54)
+task.spawn(SCRIPT_53)
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.HopButton.LocalScript \\ --
-local function SCRIPT_70()
-	local script = UI["70"]
+local function SCRIPT_6f()
+local script = UI["6f"]
 	local button = script.Parent
-
+	
 	button.MouseButton1Click:Connect(function()
 		local TeleportService = game:GetService("TeleportService")
 		local HttpService = game:GetService("HttpService")
@@ -2272,9 +2617,9 @@ local function SCRIPT_70()
 		local LocalPlayer = Players.LocalPlayer
 		local PlaceId = game.PlaceId
 		local JobId = game.JobId
-
+	
 		local servers = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/" .. PlaceId .. "/servers/Public?sortOrder=Asc&limit=100"))
-
+	
 		for _, server in ipairs(servers.data) do
 			if server.playing < server.maxPlayers and server.id ~= JobId then
 				TeleportService:TeleportToPlaceInstance(PlaceId, server.id, LocalPlayer)
@@ -2283,33 +2628,142 @@ local function SCRIPT_70()
 		end
 	end)
 end
-task.spawn(SCRIPT_70)
+task.spawn(SCRIPT_6f)
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ServerF.RejoinButton.LocalScript \\ --
-local function SCRIPT_73()
-	local script = UI["73"]
+local function SCRIPT_72()
+local script = UI["72"]
 	local button = script.Parent
 	local Players = game:GetService("Players")
 	local TeleportService = game:GetService("TeleportService")
 	local placeId = game.PlaceId
-
+	
 	local function rejoin()
 		TeleportService:Teleport(placeId, Players.LocalPlayer)
 	end
-
+	
 	button.MouseButton1Click:Connect(function()
 		rejoin()
 	end)
 end
-task.spawn(SCRIPT_73)
+task.spawn(SCRIPT_72)
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.ConsoleF.ScrollingFrame.TextLabel.LocalScript \\ --
-local function SCRIPT_7a()
-	local script = UI["7a"]
-
+local function SCRIPT_79()
+local script = UI["79"]
+	-- soon
 end
-task.spawn(SCRIPT_7a)
+task.spawn(SCRIPT_79)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.SaveScript \\ --
+local function SCRIPT_7e()
+local script = UI["7e"]
+	local Scripts = script.Parent
+	local HttpService = game:GetService("HttpService")
+	local TweenService = game:GetService("TweenService")
+	
+	local SearchBar = Scripts:WaitForChild("SearchBar")
+	local CreateTab = Scripts:WaitForChild("CreateTab")
+	
+	local CreateFrame = Scripts:WaitForChild("CreateFrame")
+	local ExitFrame_Saver = CreateFrame:WaitForChild("Exit")
+	
+	local TextNameScript = CreateFrame:WaitForChild("Name Script")
+	local TextScriptCode = CreateFrame:WaitForChild("Script Code")
+	local CreateButton = CreateFrame:WaitForChild("Create")
+	
+	local create_autoexe = (dtc and dtc.create_autoexe) or function(_, _) end
+	local isfileautoexe = (dtc and dtc.isfileautoexe) or function(_) end
+	local delfileautoexe = (dtc and dtc.delfileautoexe) or function(_) end
+	local listautoexe = (dtc and dtc.listautoexe) or function(_) end
+	local readautoexe = (dtc and dtc.readautoexe) or function(_) end
+	
+	local function RunExecute(v)
+		if dtc and dtc.schedule then
+			return clonefunction(dtc.schedule)(v)
+		else
+			return loadstring(v)()
+		end
+	end
+	
+	function Add_Tab(NameScript, ScriptCode)
+		local ScriptFrame = Scripts:WaitForChild("ScrollingFrame"):FindFirstChild("ScriptFrame")
+		local New = ScriptFrame:Clone()
+	
+		local Button = New:FindFirstChild("ImageButton")
+		Button.NameLabel.Text = NameScript or "Unknown Script"
+	
+		New.Visible = true
+		New.Parent = Scripts:WaitForChild("ScrollingFrame")
+	
+		Button.MouseButton1Click:Connect(function()
+			RunExecute(ScriptCode or "")
+		end)
+	
+		Button.Delete.MouseButton1Click:Connect(function()
+			New:Destroy()
+	
+			if isfileautoexe(NameScript .. ".txt") then
+				delfileautoexe(NameScript .. ".txt")
+			end
+		end)
+	
+		if not isfileautoexe(NameScript .. ".txt") then
+			create_autoexe(NameScript .. ".txt", tostring(ScriptCode))
+		end
+	end
+	
+	CreateTab.MouseButton1Click:Connect(function()
+		CreateFrame.Visible = not CreateFrame.Visible
+	end)
+	
+	ExitFrame_Saver.MouseButton1Click:Connect(function()
+		CreateFrame.Visible = false
+	end)
+	
+	CreateButton.MouseButton1Click:Connect(function()
+		if CreateFrame.Visible and TextNameScript.Text ~= "" and TextScriptCode.Text ~= "" then
+			local Success, Respond = pcall(function()
+				Add_Tab(TextNameScript.Text, TextScriptCode.Text)
+				TextNameScript.Text = ""
+				TextScriptCode.Text = ""
+			end)
+	
+			if Success then
+				CreateFrame.Visible = false
+			end
+		end
+	end)
+	
+	task.spawn(function()
+		for i, v in pairs(listautoexe(".") or {}) do
+			local Clean = v:gsub("/./", "")
+			if isfileautoexe(Clean) then
+	
+				Add_Tab(Clean:gsub(".txt", ""), readautoexe(Clean))
+			end
+		end
+	end)
+end
+task.spawn(SCRIPT_7e)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Name Script.LocalScript \\ --
+local function SCRIPT_97()
+local script = UI["97"]
+	script.Parent.Font = Enum.Font.GothamBold
+end
+task.spawn(SCRIPT_97)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Script Code.LocalScript \\ --
+local function SCRIPT_9b()
+local script = UI["9b"]
+	script.Parent.Font = Enum.Font.GothamBold
+end
+task.spawn(SCRIPT_9b)
+-- // StarterGui.NebulaUI.ConfigFrame.Frame.AutoF.CreateFrame.Exit.LocalScript \\ --
+local function SCRIPT_a4()
+local script = UI["a4"]
+	script.Parent.Font = Enum.Font.GothamBold
+end
+task.spawn(SCRIPT_a4)
 -- // StarterGui.NebulaUI.ConfigFrame.Frame.LocalScript \\ --
-local function SCRIPT_7f()
-	local script = UI["7f"]
+local function SCRIPT_a6()
+local script = UI["a6"]
 	local gui = script.Parent
 	local autoFButton = gui:WaitForChild("AutoExe")
 	local consoleButton = gui:WaitForChild("Console")
@@ -2320,7 +2774,7 @@ local function SCRIPT_7f()
 	
 	autoFFrame.Visible = false
 	consoleFrame.Visible = false
-	serverFrame.Visible = false
+	serverFrame.Visible = true
 	
 	autoFButton.MouseButton1Click:Connect(function()
 		autoFFrame.Visible = true
@@ -2340,10 +2794,10 @@ local function SCRIPT_7f()
 		serverFrame.Visible = true
 	end)
 end
-task.spawn(SCRIPT_7f)
+task.spawn(SCRIPT_a6)
 -- // StarterGui.NebulaUI.FolderFrame.Frame.SaveScript \\ --
-local function SCRIPT_86()
-local script = UI["86"]
+local function SCRIPT_ad()
+local script = UI["ad"]
 	local HttpService = game:GetService("HttpService")
 	local TweenService = game:GetService("TweenService")
 	
@@ -2437,34 +2891,34 @@ local script = UI["86"]
 		end
 	end)
 end
-task.spawn(SCRIPT_86)
+task.spawn(SCRIPT_ad)
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Name Script.LocalScript \\ --
-local function SCRIPT_9f()
-local script = UI["9f"]
+local function SCRIPT_c6()
+local script = UI["c6"]
 	script.Parent.Font = Enum.Font.GothamBold
 end
-task.spawn(SCRIPT_9f)
+task.spawn(SCRIPT_c6)
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Script Code.LocalScript \\ --
-local function SCRIPT_a3()
-local script = UI["a3"]
+local function SCRIPT_ca()
+local script = UI["ca"]
 	script.Parent.Font = Enum.Font.GothamBold
 end
-task.spawn(SCRIPT_a3)
+task.spawn(SCRIPT_ca)
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.TextCreate.LocalScript \\ --
-local function SCRIPT_a6()
-local script = UI["a6"]
+local function SCRIPT_cd()
+local script = UI["cd"]
 	script.Parent.Font = Enum.Font.GothamBold
 end
-task.spawn(SCRIPT_a6)
+task.spawn(SCRIPT_cd)
 -- // StarterGui.NebulaUI.FolderFrame.Frame.CreateFrame.Exit.LocalScript \\ --
-local function SCRIPT_ae()
-local script = UI["ae"]
+local function SCRIPT_d5()
+local script = UI["d5"]
 	script.Parent.Font = Enum.Font.GothamBold
 end
-task.spawn(SCRIPT_ae)
+task.spawn(SCRIPT_d5)
 -- // StarterGui.NebulaUI.LocalScript \\ --
-local function SCRIPT_af()
-local script = UI["af"]
+local function SCRIPT_d6()
+local script = UI["d6"]
 	local TweenService = game:GetService("TweenService")
 	
 	local Tabs = {
@@ -2521,10 +2975,10 @@ local script = UI["af"]
 		end)
 	end
 end
-task.spawn(SCRIPT_af)
+task.spawn(SCRIPT_d6)
 -- // StarterGui.NebulaUI.SearchFrame.Frame.APIScript \\ --
-local function SCRIPT_b6()
-local script = UI["b6"]
+local function SCRIPT_dd()
+local script = UI["dd"]
 	local Scripts = script.Parent
 	local SearchTextBox = Scripts:WaitForChild("SearchBar")
 	local HttpService = game:GetService("HttpService")
@@ -2646,6 +3100,6 @@ local script = UI["b6"]
 	
 	SearchTextBox.FocusLost:Connect(StartAPI)
 end
-task.spawn(SCRIPT_b6)
+task.spawn(SCRIPT_dd)
 
 return UI["1"], require;
