@@ -3058,7 +3058,7 @@ local script = UI["dd"]
 		local scrollingFrame = Scripts:WaitForChild("ScrollingFrame")
 		local ScriptTemplate = scrollingFrame:FindFirstChild("Script")
 		if ScriptTemplate then
-			ScriptTemplate.Visible = true
+			ScriptTemplate.Visible = false
 			ScriptTemplate.Transparency = 1
 		end
 	
